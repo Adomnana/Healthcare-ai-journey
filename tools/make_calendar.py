@@ -3,7 +3,7 @@
 
 Usage:
     python tools/make_calendar.py                 # uses START_DATE in curriculum.py
-    python tools/make_calendar.py --start 2026-10-19
+    python tools/make_calendar.py --start 2026-10-19      # any start date works
 
 Times are in Africa/Accra (UTC+0, no daylight saving), so they are written as UTC.
 Import the .ics into Google/Apple/Outlook Calendar. Re-importing after edits
@@ -13,7 +13,7 @@ import argparse
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from curriculum import START_DATE, SLOTS, WARMUP, build_days
+from curriculum import START_DATE, WARMUP, build_days, slot_for
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -52,7 +52,7 @@ def build_ics(start: date) -> str:
     ]
     for d in build_days():
         day = start + timedelta(days=d["n"] - 1)
-        s, e = SLOTS[day.weekday()]
+        s, e = slot_for(d["track"], day)
         dtstart = datetime.strptime(f"{day.isoformat()} {s}", "%Y-%m-%d %H:%M")
         dtend = datetime.strptime(f"{day.isoformat()} {e}", "%Y-%m-%d %H:%M")
         summary = f"Day {d['n']} | {d['track']}: {d['title']}"
@@ -81,12 +81,10 @@ def build_ics(start: date) -> str:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--start", help="Day 1 date (YYYY-MM-DD), should be a Monday")
+    ap.add_argument("--start", help="Day 1 date (YYYY-MM-DD), any weekday")
     ap.add_argument("--out", default=str(ROOT / "study_calendar.ics"))
     args = ap.parse_args()
     start = date.fromisoformat(args.start) if args.start else START_DATE
-    if start.weekday() != 0:
-        print("Note: start date is not a Monday; Sunday/Saturday time slots will shift.")
     Path(args.out).write_text(build_ics(start), encoding="utf-8", newline="")
     print(f"Wrote {args.out} (Day 1 = {start}, Day 84 = {start + timedelta(days=83)})")
 

@@ -3,13 +3,13 @@
 A 12-week, project-based path through **Python + Healthcare AI + AI Automation**, learned side by side. Every week ends with something built and pushed to GitHub.
 
 <!-- progress:start -->
-**Progress:** `--------------------` 1% (1/84 days) | current streak: 1 day(s)
+**Progress:** `--------------------` 0% (0/84 days) | current streak: 0 day(s)
 <!-- progress:end -->
 
 ## How it works
 
-- **Daily rhythm:** 15-min Python warm-up, then the day's task. Weekdays ~1.5 h, Saturday ~3 h build block, Sunday ~1 h review.
-- **Weekly rhythm:** Mon-Thu learn by doing small exercises, Fri-Sat build the project, Sun review and push.
+- **Daily rhythm:** 15-min Python warm-up, then the day's task. Learn days ~1.5 h, build days 2-3 h (3 h on weekends), review days ~1 h.
+- **Weekly rhythm:** each 7-day week is 4 learn days (small exercises), 2 build days (the project), then 1 review-and-push day.
 - **Two tracks, one codebase:** Healthcare AI days and Automation days alternate, and Python is practised every day. The two meet in the capstones.
 - **Practical first:** you read theory only when the next build needs it.
 
@@ -59,9 +59,9 @@ Commit your project code as you go with normal `git add` / `git commit`; `daylog
 
 ## Calendar
 
-1. Optional: change `START_DATE` in `tools/curriculum.py` (must be a Monday), then run `python tools/make_calendar.py`.
+1. Day 1 is Thursday 8 October 2026. To start on another date, change `START_DATE` in `tools/curriculum.py` and run `python tools/make_calendar.py`.
 2. Import `study_calendar.ics` into Google Calendar (desktop web: Settings, Import & export), Apple Calendar or Outlook.
-3. Each event has the day's task, what to ship, and a 15-minute reminder. Times are Accra time (UTC+0).
+3. Each event has the day's task, what to ship, and a 15-minute reminder. Times are Accra time (UTC+0): weekday evenings from 19:00, weekend mornings from 10:00.
 
 ## Ground rules
 

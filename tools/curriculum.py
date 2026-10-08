@@ -1,7 +1,7 @@
 """
 12-week (84-day) project-based curriculum: Python + Healthcare AI + AI Automation.
 
-Edit START_DATE if you start on a different Monday. Everything else
+Edit START_DATE if you start on a different day. Everything else
 (calendar, progress log, README bar) is generated from this file.
 
 Daily rhythm: 15-min Python warm-up, then the day's task.
@@ -9,15 +9,21 @@ Tracks: PYTHON, HEALTH AI, AUTOMATION, BUILD, REVIEW.
 """
 from datetime import date
 
-START_DATE = date(2026, 10, 12)  # Day 1 - must be a Monday
+START_DATE = date(2026, 10, 8)  # Day 1 (any weekday works)
 
-# Event times (Africa/Accra = UTC+0). Weekday index: 0=Mon ... 6=Sun
+# Event times (Africa/Accra = UTC+0), by kind of day and whether it falls on a weekend.
+# kind: learn (PYTHON/HEALTH AI/AUTOMATION), build (BUILD), review (REVIEW)
 SLOTS = {
-    0: ("19:00", "20:30"), 1: ("19:00", "20:30"), 2: ("19:00", "20:30"),
-    3: ("19:00", "20:30"), 4: ("19:00", "20:30"),
-    5: ("10:00", "13:00"),  # Saturday build block
-    6: ("17:00", "18:00"),  # Sunday review + push
+    ("learn", False): ("19:00", "20:30"), ("learn", True): ("10:00", "11:30"),
+    ("build", False): ("19:00", "21:00"), ("build", True): ("10:00", "13:00"),
+    ("review", False): ("19:00", "20:00"), ("review", True): ("17:00", "18:00"),
 }
+
+
+def slot_for(track, day):
+    kind = "build" if track == "BUILD" else "review" if track == "REVIEW" else "learn"
+    return SLOTS[(kind, day.weekday() >= 5)]
+
 
 WARMUP = "Start with a 15-min Python warm-up (Exercism or Kaggle Learn exercise)."
 

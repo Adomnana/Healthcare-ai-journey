@@ -7,9 +7,9 @@ X-WR-CALNAME:Healthcare AI + Automation: 12-week plan
 X-WR-TIMEZONE:Africa/Accra
 BEGIN:VEVENT
 UID:hai-journey-day01@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261012T190000Z
-DTEND:20261012T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261008T190000Z
+DTEND:20261008T203000Z
 SUMMARY:Day 1 | PYTHON: Environment + Git workflow
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -27,9 +27,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day02@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261013T190000Z
-DTEND:20261013T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261009T190000Z
+DTEND:20261009T203000Z
 SUMMARY:Day 2 | PYTHON: Data structures + files
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -46,9 +46,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day03@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261014T190000Z
-DTEND:20261014T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261010T100000Z
+DTEND:20261010T113000Z
 SUMMARY:Day 3 | HEALTH AI: Health data 101 + privacy
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -67,9 +67,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day04@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261015T190000Z
-DTEND:20261015T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261011T100000Z
+DTEND:20261011T113000Z
 SUMMARY:Day 4 | AUTOMATION: Folder organiser script
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -86,9 +86,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day05@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261016T190000Z
-DTEND:20261016T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261012T190000Z
+DTEND:20261012T210000Z
 SUMMARY:Day 5 | BUILD: Vitals Logger CLI: core
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -105,9 +105,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day06@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261017T100000Z
-DTEND:20261017T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
 SUMMARY:Day 6 | BUILD: Vitals Logger CLI: tests + README
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -123,9 +123,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day07@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261018T170000Z
-DTEND:20261018T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261014T190000Z
+DTEND:20261014T200000Z
 SUMMARY:Day 7 | REVIEW: Week 1 review + push
 DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
  ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
@@ -142,9 +142,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day08@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261019T190000Z
-DTEND:20261019T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261015T190000Z
+DTEND:20261015T203000Z
 SUMMARY:Day 8 | PYTHON: pandas I
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -161,9 +161,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day09@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261020T190000Z
-DTEND:20261020T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261016T190000Z
+DTEND:20261016T203000Z
 SUMMARY:Day 9 | HEALTH AI: Cleaning clinical data
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -180,9 +180,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day10@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261021T190000Z
-DTEND:20261021T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261017T100000Z
+DTEND:20261017T113000Z
 SUMMARY:Day 10 | PYTHON: pandas II + SQL tie-in
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -199,9 +199,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day11@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261022T190000Z
-DTEND:20261022T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261018T100000Z
+DTEND:20261018T113000Z
 SUMMARY:Day 11 | AUTOMATION: APIs with requests
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -218,9 +218,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day12@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261023T190000Z
-DTEND:20261023T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261019T190000Z
+DTEND:20261019T210000Z
 SUMMARY:Day 12 | BUILD: Explorer notebook
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -237,9 +237,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day13@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261024T100000Z
-DTEND:20261024T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
 SUMMARY:Day 13 | BUILD: Charts + findings
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -256,9 +256,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day14@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261025T170000Z
-DTEND:20261025T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261021T190000Z
+DTEND:20261021T200000Z
 SUMMARY:Day 14 | REVIEW: Week 2 review + push
 DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
  h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
@@ -275,9 +275,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day15@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261026T190000Z
-DTEND:20261026T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261022T190000Z
+DTEND:20261022T203000Z
 SUMMARY:Day 15 | PYTHON: Modules\, type hints\, structure
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -293,9 +293,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day16@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261027T190000Z
-DTEND:20261027T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261023T190000Z
+DTEND:20261023T203000Z
 SUMMARY:Day 16 | HEALTH AI: EDA done right
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -312,9 +312,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day17@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261028T190000Z
-DTEND:20261028T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261024T100000Z
+DTEND:20261024T113000Z
 SUMMARY:Day 17 | PYTHON: Streamlit basics
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -330,9 +330,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day18@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261029T190000Z
-DTEND:20261029T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261025T100000Z
+DTEND:20261025T113000Z
 SUMMARY:Day 18 | AUTOMATION: Email + scheduling
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -349,9 +349,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day19@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261030T190000Z
-DTEND:20261030T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261026T190000Z
+DTEND:20261026T210000Z
 SUMMARY:Day 19 | BUILD: Streamlit dashboard
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -367,9 +367,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day20@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261031T100000Z
-DTEND:20261031T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261027T190000Z
+DTEND:20261027T210000Z
 SUMMARY:Day 20 | BUILD: Deploy + README
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -385,9 +385,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day21@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261101T170000Z
-DTEND:20261101T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261028T190000Z
+DTEND:20261028T200000Z
 SUMMARY:Day 21 | REVIEW: Week 3 review + push
 DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
  lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
@@ -404,9 +404,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day22@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261102T190000Z
-DTEND:20261102T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261029T190000Z
+DTEND:20261029T203000Z
 SUMMARY:Day 22 | PYTHON: Errors\, logging\, pytest
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -423,9 +423,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day23@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261103T190000Z
-DTEND:20261103T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261030T190000Z
+DTEND:20261030T203000Z
 SUMMARY:Day 23 | AUTOMATION: RSS + storage
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -442,9 +442,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day24@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261104T190000Z
-DTEND:20261104T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261031T100000Z
+DTEND:20261031T113000Z
 SUMMARY:Day 24 | AUTOMATION: LLM summaries
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -461,9 +461,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day25@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261105T190000Z
-DTEND:20261105T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261101T100000Z
+DTEND:20261101T113000Z
 SUMMARY:Day 25 | HEALTH AI: First ML model (preview)
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -480,9 +480,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day26@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261106T190000Z
-DTEND:20261106T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261102T190000Z
+DTEND:20261102T210000Z
 SUMMARY:Day 26 | BUILD: Digest pipeline
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -499,9 +499,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day27@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261107T100000Z
-DTEND:20261107T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261103T190000Z
+DTEND:20261103T210000Z
 SUMMARY:Day 27 | BUILD: GitHub Actions cron
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -518,9 +518,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day28@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261108T170000Z
-DTEND:20261108T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261104T190000Z
+DTEND:20261104T200000Z
 SUMMARY:Day 28 | REVIEW: Week 4 review + push
 DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
  Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
@@ -538,9 +538,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day29@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261109T190000Z
-DTEND:20261109T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261105T190000Z
+DTEND:20261105T203000Z
 SUMMARY:Day 29 | PYTHON: NumPy + sklearn pipelines
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -556,9 +556,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day30@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261110T190000Z
-DTEND:20261110T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261106T190000Z
+DTEND:20261106T203000Z
 SUMMARY:Day 30 | HEALTH AI: Baseline models
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -575,9 +575,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day31@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261111T190000Z
-DTEND:20261111T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261107T100000Z
+DTEND:20261107T113000Z
 SUMMARY:Day 31 | PYTHON: Features + data leakage
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -594,9 +594,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day32@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261112T190000Z
-DTEND:20261112T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261108T100000Z
+DTEND:20261108T113000Z
 SUMMARY:Day 32 | AUTOMATION: Automated experiments
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -613,9 +613,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day33@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261113T190000Z
-DTEND:20261113T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261109T190000Z
+DTEND:20261109T210000Z
 SUMMARY:Day 33 | BUILD: Risk Predictor: training
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -631,9 +631,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day34@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261114T100000Z
-DTEND:20261114T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261110T190000Z
+DTEND:20261110T210000Z
 SUMMARY:Day 34 | BUILD: Tune + save
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -649,9 +649,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day35@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261115T170000Z
-DTEND:20261115T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261111T190000Z
+DTEND:20261111T200000Z
 SUMMARY:Day 35 | REVIEW: Week 5 review + push
 DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
  se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
@@ -669,9 +669,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day36@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261116T190000Z
-DTEND:20261116T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261112T190000Z
+DTEND:20261112T203000Z
 SUMMARY:Day 36 | HEALTH AI: Clinical metrics
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -688,9 +688,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day37@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261117T190000Z
-DTEND:20261117T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261113T190000Z
+DTEND:20261113T203000Z
 SUMMARY:Day 37 | PYTHON: Evaluation plots
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -707,9 +707,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day38@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261118T190000Z
-DTEND:20261118T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261114T100000Z
+DTEND:20261114T113000Z
 SUMMARY:Day 38 | HEALTH AI: Explainability + fairness
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -725,9 +725,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day39@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261119T190000Z
-DTEND:20261119T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261115T100000Z
+DTEND:20261115T113000Z
 SUMMARY:Day 39 | AUTOMATION: Model as an API
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -743,9 +743,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day40@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261120T190000Z
-DTEND:20261120T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261116T190000Z
+DTEND:20261116T210000Z
 SUMMARY:Day 40 | BUILD: Model card + UI
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -762,9 +762,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day41@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261121T100000Z
-DTEND:20261121T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261117T190000Z
+DTEND:20261117T210000Z
 SUMMARY:Day 41 | BUILD: Deploy + polish
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -781,9 +781,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day42@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261122T170000Z
-DTEND:20261122T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261118T190000Z
+DTEND:20261118T200000Z
 SUMMARY:Day 42 | REVIEW: Week 6 review + push
 DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
   3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
@@ -801,9 +801,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day43@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261123T190000Z
-DTEND:20261123T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261119T190000Z
+DTEND:20261119T203000Z
 SUMMARY:Day 43 | PYTHON: Structured data with pydantic
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -820,9 +820,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day44@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261124T190000Z
-DTEND:20261124T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261120T190000Z
+DTEND:20261120T203000Z
 SUMMARY:Day 44 | HEALTH AI: Prompting on clinical text
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -839,9 +839,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day45@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261125T190000Z
-DTEND:20261125T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261121T100000Z
+DTEND:20261121T113000Z
 SUMMARY:Day 45 | AUTOMATION: Extraction pipeline
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -857,9 +857,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day46@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261126T190000Z
-DTEND:20261126T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261122T100000Z
+DTEND:20261122T113000Z
 SUMMARY:Day 46 | HEALTH AI: Evaluate the LLM
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -876,9 +876,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day47@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261127T190000Z
-DTEND:20261127T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261123T190000Z
+DTEND:20261123T210000Z
 SUMMARY:Day 47 | BUILD: Extractor app
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -894,9 +894,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day48@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261128T100000Z
-DTEND:20261128T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261124T190000Z
+DTEND:20261124T210000Z
 SUMMARY:Day 48 | BUILD: Guardrails + README
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -913,9 +913,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day49@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261129T170000Z
-DTEND:20261129T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261125T190000Z
+DTEND:20261125T200000Z
 SUMMARY:Day 49 | REVIEW: Week 7 review + push
 DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
   Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
@@ -933,9 +933,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day50@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261130T190000Z
-DTEND:20261130T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261126T190000Z
+DTEND:20261126T203000Z
 SUMMARY:Day 50 | PYTHON: Documents to chunks
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -952,9 +952,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day51@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261201T190000Z
-DTEND:20261201T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261127T190000Z
+DTEND:20261127T203000Z
 SUMMARY:Day 51 | AUTOMATION: Ingestion pipeline
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -971,9 +971,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day52@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261202T190000Z
-DTEND:20261202T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261128T100000Z
+DTEND:20261128T113000Z
 SUMMARY:Day 52 | HEALTH AI: RAG with citations
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -990,9 +990,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day53@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261203T190000Z
-DTEND:20261203T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261129T100000Z
+DTEND:20261129T113000Z
 SUMMARY:Day 53 | AUTOMATION: Evaluate RAG
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -1009,9 +1009,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day54@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261204T190000Z
-DTEND:20261204T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261130T190000Z
+DTEND:20261130T210000Z
 SUMMARY:Day 54 | BUILD: Chat UI
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -1027,9 +1027,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day55@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261205T100000Z
-DTEND:20261205T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261201T190000Z
+DTEND:20261201T210000Z
 SUMMARY:Day 55 | BUILD: Polish + month 2 write-up
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -1046,9 +1046,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day56@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261206T170000Z
-DTEND:20261206T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261202T190000Z
+DTEND:20261202T200000Z
 SUMMARY:Day 56 | REVIEW: Week 8 review + push
 DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
  Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
@@ -1066,9 +1066,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day57@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261207T190000Z
-DTEND:20261207T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261203T190000Z
+DTEND:20261203T203000Z
 SUMMARY:Day 57 | PYTHON: Project architecture
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1085,9 +1085,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day58@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261208T190000Z
-DTEND:20261208T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261204T190000Z
+DTEND:20261204T203000Z
 SUMMARY:Day 58 | HEALTH AI: Capstone A spec
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1105,9 +1105,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day59@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261209T190000Z
-DTEND:20261209T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261205T100000Z
+DTEND:20261205T113000Z
 SUMMARY:Day 59 | AUTOMATION: Capstone B spec
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1125,9 +1125,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day60@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261210T190000Z
-DTEND:20261210T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261206T100000Z
+DTEND:20261206T113000Z
 SUMMARY:Day 60 | HEALTH AI: Capstone A data pipeline
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1144,9 +1144,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day61@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261211T190000Z
-DTEND:20261211T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261207T190000Z
+DTEND:20261207T210000Z
 SUMMARY:Day 61 | BUILD: Capstone A model
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1163,9 +1163,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day62@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261212T100000Z
-DTEND:20261212T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261208T190000Z
+DTEND:20261208T210000Z
 SUMMARY:Day 62 | BUILD: Capstone A API + tests
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1182,9 +1182,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day63@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261213T170000Z
-DTEND:20261213T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261209T190000Z
+DTEND:20261209T200000Z
 SUMMARY:Day 63 | REVIEW: Week 9 review + push
 DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
  ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
@@ -1202,9 +1202,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day64@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261214T190000Z
-DTEND:20261214T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261210T190000Z
+DTEND:20261210T203000Z
 SUMMARY:Day 64 | PYTHON: Quality pass
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1220,9 +1220,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day65@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261215T190000Z
-DTEND:20261215T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261211T190000Z
+DTEND:20261211T203000Z
 SUMMARY:Day 65 | HEALTH AI: Explanation layer
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1239,9 +1239,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day66@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261216T190000Z
-DTEND:20261216T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261212T100000Z
+DTEND:20261212T113000Z
 SUMMARY:Day 66 | AUTOMATION: n8n workflow basics
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1258,9 +1258,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day67@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261217T190000Z
-DTEND:20261217T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261213T100000Z
+DTEND:20261213T130000Z
 SUMMARY:Day 67 | BUILD: Capstone A UI
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1276,9 +1276,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day68@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261218T190000Z
-DTEND:20261218T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261214T190000Z
+DTEND:20261214T210000Z
 SUMMARY:Day 68 | BUILD: Capstone A deploy
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1293,9 +1293,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day69@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261219T100000Z
-DTEND:20261219T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261215T190000Z
+DTEND:20261215T210000Z
 SUMMARY:Day 69 | BUILD: Capstone A docs
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1311,9 +1311,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day70@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261220T170000Z
-DTEND:20261220T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261216T190000Z
+DTEND:20261216T200000Z
 SUMMARY:Day 70 | REVIEW: Week 10 review + push
 DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
  A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
@@ -1330,9 +1330,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day71@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261221T190000Z
-DTEND:20261221T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261217T190000Z
+DTEND:20261217T203000Z
 SUMMARY:Day 71 | AUTOMATION: Intake + webhook
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1349,9 +1349,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day72@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261222T190000Z
-DTEND:20261222T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261218T190000Z
+DTEND:20261218T203000Z
 SUMMARY:Day 72 | AUTOMATION: LLM extraction + urgency
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1367,9 +1367,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day73@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261223T190000Z
-DTEND:20261223T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261219T100000Z
+DTEND:20261219T113000Z
 SUMMARY:Day 73 | PYTHON: Storage layer
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1385,9 +1385,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day74@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261224T190000Z
-DTEND:20261224T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261220T100000Z
+DTEND:20261220T113000Z
 SUMMARY:Day 74 | AUTOMATION: Notifications
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1403,9 +1403,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day75@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261225T190000Z
-DTEND:20261225T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261221T190000Z
+DTEND:20261221T210000Z
 SUMMARY:Day 75 | BUILD: Human-in-the-loop review
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1421,9 +1421,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day76@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261226T100000Z
-DTEND:20261226T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261222T190000Z
+DTEND:20261222T210000Z
 SUMMARY:Day 76 | BUILD: Dashboard
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1439,9 +1439,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day77@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261227T170000Z
-DTEND:20261227T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261223T190000Z
+DTEND:20261223T200000Z
 SUMMARY:Day 77 | REVIEW: Week 11 review + push
 DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
  tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
@@ -1458,9 +1458,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day78@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261228T190000Z
-DTEND:20261228T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261224T190000Z
+DTEND:20261224T203000Z
 SUMMARY:Day 78 | PYTHON: Final code cleanup
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
@@ -1476,9 +1476,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day79@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261229T190000Z
-DTEND:20261229T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261225T190000Z
+DTEND:20261225T210000Z
 SUMMARY:Day 79 | BUILD: READMEs that sell
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
@@ -1494,9 +1494,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day80@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261230T190000Z
-DTEND:20261230T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261226T100000Z
+DTEND:20261226T130000Z
 SUMMARY:Day 80 | BUILD: Profile + portfolio
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
@@ -1512,9 +1512,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day81@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20261231T190000Z
-DTEND:20261231T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261227T100000Z
+DTEND:20261227T130000Z
 SUMMARY:Day 81 | BUILD: Demo videos
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
@@ -1530,9 +1530,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day82@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20270101T190000Z
-DTEND:20270101T203000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261228T190000Z
+DTEND:20261228T210000Z
 SUMMARY:Day 82 | BUILD: Write it up
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
@@ -1548,9 +1548,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day83@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20270102T100000Z
-DTEND:20270102T130000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261229T190000Z
+DTEND:20261229T200000Z
 SUMMARY:Day 83 | REVIEW: Explain your projects
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
@@ -1566,9 +1566,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hai-journey-day84@healthcare-ai-journey
-DTSTAMP:20261007T230241Z
-DTSTART:20270103T170000Z
-DTEND:20270103T180000Z
+DTSTAMP:20261008T111334Z
+DTSTART:20261230T190000Z
+DTEND:20261230T200000Z
 SUMMARY:Day 84 | REVIEW: Week 12 review + push
 DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
  o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
