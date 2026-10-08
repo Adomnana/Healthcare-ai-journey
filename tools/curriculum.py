@@ -1,0 +1,352 @@
+"""
+12-week (84-day) project-based curriculum: Python + Healthcare AI + AI Automation.
+
+Edit START_DATE if you start on a different Monday. Everything else
+(calendar, progress log, README bar) is generated from this file.
+
+Daily rhythm: 15-min Python warm-up, then the day's task.
+Tracks: PYTHON, HEALTH AI, AUTOMATION, BUILD, REVIEW.
+"""
+from datetime import date
+
+START_DATE = date(2026, 10, 12)  # Day 1 - must be a Monday
+
+# Event times (Africa/Accra = UTC+0). Weekday index: 0=Mon ... 6=Sun
+SLOTS = {
+    0: ("19:00", "20:30"), 1: ("19:00", "20:30"), 2: ("19:00", "20:30"),
+    3: ("19:00", "20:30"), 4: ("19:00", "20:30"),
+    5: ("10:00", "13:00"),  # Saturday build block
+    6: ("17:00", "18:00"),  # Sunday review + push
+}
+
+WARMUP = "Start with a 15-min Python warm-up (Exercism or Kaggle Learn exercise)."
+
+# Each week: theme, project focus, 6 day tuples (Mon-Sat), Sunday demo line.
+# Day tuple = (track, title, what to do, what to ship/commit)
+WEEKS = [
+    dict(
+        theme="Setup + Python fast-track",
+        project="Project 0: Vitals Logger CLI",
+        days=[
+            ("PYTHON", "Environment + Git workflow",
+             "Install Python 3.12 + VS Code, create a venv, clone/reorganise your healthcare-ai-journey repo with the folder layout from the README. Do 10 mini-exercises (functions, loops, conditionals) to test out of the basics you already know.",
+             "First commit with the new repo layout + exercises/week01.py"),
+            ("PYTHON", "Data structures + files",
+             "Lists, dicts, sets, comprehensions. Read/write CSV and JSON. Parse a CSV of SYNTHETIC patient vitals into a list of dicts and compute averages.",
+             "exercises/vitals_parse.py"),
+            ("HEALTH AI", "Health data 101 + privacy",
+             "Skim what EHRs, ICD-10 and FHIR are (30 min). Read the basics of Ghana's Data Protection Act, 2012 (Act 843). Write data-rules.md: never use real patient data, de-identify, keep secrets out of Git. Generate 50 synthetic patients with Python's random module or Faker.",
+             "data-rules.md + synthetic_patients.csv"),
+            ("AUTOMATION", "Folder organiser script",
+             "Use pathlib + argparse to build a script that sorts a messy folder by file type/date. Add a --dry-run flag and logging.",
+             "exercises/organiser.py committed"),
+            ("BUILD", "Vitals Logger CLI: core",
+             "Build a command-line tool: add, list and summarise readings (blood pressure, temperature, glucose) stored in JSON. Flag out-of-range values using simple documented thresholds.",
+             "Working add/list/summary commands"),
+            ("BUILD", "Vitals Logger CLI: tests + README",
+             "Write 5 pytest tests, add a README with usage examples, tidy the code into functions.",
+             "Project 0 pushed to GitHub with README"),
+        ],
+        demo="Vitals Logger CLI works and has tests",
+    ),
+    dict(
+        theme="pandas + SQL for health data",
+        project="Project 1: Health Data Explorer (start)",
+        days=[
+            ("PYTHON", "pandas I",
+             "DataFrames, read_csv, head/info/describe, selecting and filtering. Load the UCI Heart Disease dataset and answer 5 questions about it.",
+             "notebooks/01_heart_intro.ipynb"),
+            ("HEALTH AI", "Cleaning clinical data",
+             "Handle missing values, odd codes, outliers, wrong dtypes. Write a data dictionary for the heart dataset and log every cleaning decision with a reason.",
+             "data_dictionary.md + cleaned CSV"),
+            ("PYTHON", "pandas II + SQL tie-in",
+             "groupby, merge, pivot. Load the data into SQLite and rewrite 5 of your pandas queries in SQL (you already know SQL, so use it as a cross-check).",
+             "queries.sql + matching pandas code"),
+            ("AUTOMATION", "APIs with requests",
+             "Pull Ghana indicators from the WHO Global Health Observatory open data API into a CSV. Add error handling, timeouts and retries.",
+             "scripts/fetch_who_ghana.py"),
+            ("BUILD", "Explorer notebook",
+             "Answer 8 questions about the heart data plus Ghana WHO indicators in one clean notebook, with a short written finding under each.",
+             "Notebook with 8 questions answered"),
+            ("BUILD", "Charts + findings",
+             "Make 6 clear charts (matplotlib/seaborn), label axes, write a one-page summary of findings and limits of the data.",
+             "Charts + findings.md pushed"),
+        ],
+        demo="Explorer notebook with 6 charts and findings",
+    ),
+    dict(
+        theme="Dashboards + scheduled scripts",
+        project="Project 1: Health Data Explorer (ship)",
+        days=[
+            ("PYTHON", "Modules, type hints, structure",
+             "Refactor last week's notebook code into a src/ package: functions, type hints, docstrings.",
+             "src/health_explorer/ package"),
+            ("HEALTH AI", "EDA done right",
+             "Correlations, class balance, stratified summaries by sex/age. Ask: who is represented in this dataset, and how is that different from patients in Ghana?",
+             "Bias/representativeness section in findings.md"),
+            ("PYTHON", "Streamlit basics",
+             "Widgets, layout, caching. Build a skeleton app that loads your cleaned data and shows a table.",
+             "app.py skeleton running locally"),
+            ("AUTOMATION", "Email + scheduling",
+             "Send an email from Python (smtplib or an email API) using secrets from a .env file. Schedule a script with cron / Task Scheduler. Never commit .env.",
+             "scripts/send_report.py + .gitignore with .env"),
+            ("BUILD", "Streamlit dashboard",
+             "Turn the explorer into a dashboard with filters (age, sex, outcome) and 3 live charts.",
+             "Dashboard working locally"),
+            ("BUILD", "Deploy + README",
+             "Deploy to Streamlit Community Cloud, add screenshots and a how-to-run section to the README.",
+             "Live link in README, Project 1 shipped"),
+        ],
+        demo="Dashboard deployed with a live link",
+    ),
+    dict(
+        theme="Automation I: Daily Health Digest",
+        project="Project 2: Daily Health Digest + Month 1 checkpoint",
+        days=[
+            ("PYTHON", "Errors, logging, pytest",
+             "try/except done properly, the logging module, pytest fixtures. Add logging and tests to your fetch script.",
+             "tests/ folder with 5+ tests"),
+            ("AUTOMATION", "RSS + storage",
+             "Fetch health news from public RSS feeds (e.g. WHO), dedupe by URL, store in SQLite.",
+             "scripts/fetch_news.py + news.db schema"),
+            ("AUTOMATION", "LLM summaries",
+             "Call an LLM API (Claude or any provider) to summarise each article in 2 sentences. Keep API keys in env vars, cap costs with a daily item limit.",
+             "summarise.py with a prompt you can explain"),
+            ("HEALTH AI", "First ML model (preview)",
+             "Train/test split, overfitting, accuracy vs other metrics. Fit a logistic regression on the heart data in 20 lines and read the results critically.",
+             "notebooks/04_first_model.ipynb"),
+            ("BUILD", "Digest pipeline",
+             "Wire it together: fetch, dedupe, summarise, build an HTML/plain-text digest, email it to yourself.",
+             "End-to-end run succeeds locally"),
+            ("BUILD", "GitHub Actions cron",
+             "Run the pipeline daily with a GitHub Actions schedule and repo secrets. Add a README with an architecture sketch.",
+             "Project 2 live and running daily"),
+        ],
+        demo="Month 1 checkpoint: 3 projects shipped, repo README updated",
+    ),
+    dict(
+        theme="ML for clinical prediction I",
+        project="Project 3: Disease Risk Predictor (build)",
+        days=[
+            ("PYTHON", "NumPy + sklearn pipelines",
+             "NumPy essentials, then sklearn Pipeline and ColumnTransformer so preprocessing is part of the model.",
+             "exercises/pipelines.py"),
+            ("HEALTH AI", "Baseline models",
+             "Logistic regression, random forest and gradient boosting on the Pima diabetes or heart dataset with cross-validation. Compare them in one table.",
+             "Model comparison table"),
+            ("PYTHON", "Features + data leakage",
+             "Feature engineering and a leakage hunt: check whether any column gives away the label or comes from after diagnosis. Document what you find.",
+             "leakage_check.md"),
+            ("AUTOMATION", "Automated experiments",
+             "Script that trains several models from a YAML config and logs results to a CSV, so you can rerun everything with one command.",
+             "run_experiments.py + config.yaml"),
+            ("BUILD", "Risk Predictor: training",
+             "Create the project folder with a clean train.py, evaluation table and saved results.",
+             "projects/03-risk-predictor/train.py working"),
+            ("BUILD", "Tune + save",
+             "Hyperparameter tuning (GridSearchCV or Optuna), save the best model with joblib, push.",
+             "model.joblib + metrics.json"),
+        ],
+        demo="Trained, tuned risk model with reproducible training script",
+    ),
+    dict(
+        theme="Evaluation that matters in healthcare",
+        project="Project 3: Disease Risk Predictor (ship)",
+        days=[
+            ("HEALTH AI", "Clinical metrics",
+             "Sensitivity, specificity, ROC-AUC, precision-recall, thresholds. Why accuracy misleads for screening. Pick a threshold for a screening use case and justify it.",
+             "metrics_notes.md"),
+            ("PYTHON", "Evaluation plots",
+             "Matplotlib: ROC curve, calibration curve, confusion matrix. Package them into a reusable evaluate.py.",
+             "evaluate.py + 3 saved plots"),
+            ("HEALTH AI", "Explainability + fairness",
+             "Permutation importance or SHAP. Check performance by subgroup (sex, age bands) and record gaps.",
+             "explainability.ipynb"),
+            ("AUTOMATION", "Model as an API",
+             "Wrap the model in a FastAPI /predict endpoint with pydantic validation. Test with curl and pytest.",
+             "api.py + tests"),
+            ("BUILD", "Model card + UI",
+             "Write the model card (intended use, data, metrics, limits, ethics) and a Streamlit risk-calculator that calls your API.",
+             "MODEL_CARD.md + UI working"),
+            ("BUILD", "Deploy + polish",
+             "Deploy the UI (and API if you can), add a clear 'not medical advice' notice, README with results. Optional: Dockerfile.",
+             "Project 3 shipped with live link"),
+        ],
+        demo="Risk predictor with model card and live demo",
+    ),
+    dict(
+        theme="LLMs for health text",
+        project="Project 4: Clinical Note Extractor (synthetic data only)",
+        days=[
+            ("PYTHON", "Structured data with pydantic",
+             "Pydantic models, JSON schema, validating messy input. Practise turning free text into typed objects.",
+             "exercises/pydantic_schemas.py"),
+            ("HEALTH AI", "Prompting on clinical text",
+             "Generate 30 SYNTHETIC clinical notes (LLM or Synthea). Write prompts to summarise and extract symptoms, medications and dosages. Never use real patient notes.",
+             "data/synthetic_notes/ + prompts.md"),
+            ("AUTOMATION", "Extraction pipeline",
+             "LLM output to JSON validated by pydantic to CSV. Add retries when the JSON is invalid.",
+             "extract.py producing notes.csv"),
+            ("HEALTH AI", "Evaluate the LLM",
+             "Hand-label a 20-note gold set. Measure precision/recall per field and keep a failure log of what the model gets wrong.",
+             "eval/results.md"),
+            ("BUILD", "Extractor app",
+             "Streamlit app: paste a note, get a structured summary and extracted fields side by side.",
+             "App working locally"),
+            ("BUILD", "Guardrails + README",
+             "Add disclaimers, a PII-scrub step, refuse-to-diagnose behaviour. README with your eval numbers and known failures.",
+             "Project 4 shipped"),
+        ],
+        demo="Extractor app with measured accuracy and failure log",
+    ),
+    dict(
+        theme="RAG + agents on health guidelines",
+        project="Project 5: Guideline Q&A with citations + Month 2 checkpoint",
+        days=[
+            ("PYTHON", "Documents to chunks",
+             "Parse PDFs (pypdf), clean text, chunk it sensibly. Learn what embeddings are by playing with a small example.",
+             "ingest/parse_pdf.py"),
+            ("AUTOMATION", "Ingestion pipeline",
+             "Public guideline PDFs (e.g. WHO guidance or Ghana's standard treatment guidelines) to chunks to embeddings to a vector store (Chroma or FAISS).",
+             "ingest pipeline runs end to end"),
+            ("HEALTH AI", "RAG with citations",
+             "Retrieve the top chunks, answer using only them, and show source page numbers. Make the model say 'I don't know' when the guidelines don't cover the question.",
+             "rag.py with citations"),
+            ("AUTOMATION", "Evaluate RAG",
+             "Write 15 test questions. Check retrieval hits, groundedness and the I-don't-know behaviour. Fix the weakest 3.",
+             "eval/rag_eval.md"),
+            ("BUILD", "Chat UI",
+             "Streamlit chat interface with expandable source snippets under every answer.",
+             "Chat app working"),
+            ("BUILD", "Polish + month 2 write-up",
+             "README, screenshots, limitations section. Write a short post on what you built in month 2.",
+             "Project 5 shipped"),
+        ],
+        demo="Month 2 checkpoint: 6 projects shipped, one blog/LinkedIn draft",
+    ),
+    dict(
+        theme="Capstones: planning + Capstone A start",
+        project="Capstone A: Chronic Disease Risk Screening Assistant (Ghana focus)",
+        days=[
+            ("PYTHON", "Project architecture",
+             "Repo layout, config handling, modules, Makefile or task runner. Set up both capstone repos/folders.",
+             "projects/capstone-a/ and capstone-b/ skeletons"),
+            ("HEALTH AI", "Capstone A spec",
+             "One-page spec: problem, users, dataset(s), success metrics, risks, what the tool will NOT do. Risk model + plain-language explanation layer, built on Ghana-relevant context.",
+             "docs/spec.md"),
+            ("AUTOMATION", "Capstone B spec",
+             "Clinic admin automation: intake form to extraction to triage category to notification to dashboard. Model the workflow as a BPMN diagram (you already know BPMN).",
+             "docs/workflow.bpmn or .png + spec.md"),
+            ("HEALTH AI", "Capstone A data pipeline",
+             "Build the cleaning/feature pipeline for Capstone A using your earlier work. Add data checks.",
+             "pipeline.py + tests"),
+            ("BUILD", "Capstone A model",
+             "Train, evaluate and tune using your Project 3 playbook. Record threshold choice and subgroup results.",
+             "Trained model + metrics"),
+            ("BUILD", "Capstone A API + tests",
+             "FastAPI endpoint, input validation, tests, simple CI with GitHub Actions.",
+             "Green CI badge in README"),
+        ],
+        demo="Capstone A has spec, model and API; Capstone B has spec and workflow",
+    ),
+    dict(
+        theme="Capstone A finish + workflow tools",
+        project="Capstone A: ship",
+        days=[
+            ("PYTHON", "Quality pass",
+             "Linting (ruff), formatting, test coverage on the capstone code. Fix the 5 worst smells.",
+             "Cleaner code, coverage report"),
+            ("HEALTH AI", "Explanation layer",
+             "Add feature explanations and an LLM-written plain-language summary for a result, with strict guardrails (no diagnosis, advise seeing a clinician).",
+             "explain.py + guardrail tests"),
+            ("AUTOMATION", "n8n workflow basics",
+             "Run n8n locally, build a webhook-triggered workflow that calls your API and sends a notification. Compare it with doing the same in Python.",
+             "workflows/n8n_intro.json exported"),
+            ("BUILD", "Capstone A UI",
+             "Streamlit interface: inputs, result, explanation, clear limits notice.",
+             "UI working"),
+            ("BUILD", "Capstone A deploy",
+             "Deploy, test from your phone, fix what breaks.",
+             "Live link"),
+            ("BUILD", "Capstone A docs",
+             "Model card, README with demo GIF, ethics and limitations section.",
+             "Capstone A shipped"),
+        ],
+        demo="Capstone A live with model card",
+    ),
+    dict(
+        theme="Capstone B build",
+        project="Capstone B: Clinic Admin Automation Pipeline",
+        days=[
+            ("AUTOMATION", "Intake + webhook",
+             "A simple intake form (FastAPI form or Google Form) that sends data to your pipeline. Use synthetic submissions only.",
+             "intake endpoint + 10 test submissions"),
+            ("AUTOMATION", "LLM extraction + urgency",
+             "Extract key fields and assign a triage category with a confidence score. Low confidence goes to a human.",
+             "triage.py + prompts"),
+            ("PYTHON", "Storage layer",
+             "SQLite (or Postgres) tables for submissions, extracted fields, decisions, audit log. Write the data access code and tests.",
+             "db.py + tests"),
+            ("AUTOMATION", "Notifications",
+             "Notify the right person by email or Telegram bot depending on category. Add rate limits and failure handling.",
+             "notify.py working"),
+            ("BUILD", "Human-in-the-loop review",
+             "Review screen where a person approves or corrects the AI's triage. Log every correction.",
+             "Review UI working"),
+            ("BUILD", "Dashboard",
+             "Streamlit dashboard: volume per day, categories, AI-vs-human agreement rate.",
+             "Dashboard with real metrics"),
+        ],
+        demo="Capstone B working end to end on synthetic data",
+    ),
+    dict(
+        theme="Polish, publish, plan what's next",
+        project="Portfolio launch",
+        days=[
+            ("PYTHON", "Final code cleanup",
+             "Refactor, lint, raise test coverage on both capstones. Delete dead code and unused notebooks.",
+             "Clean main branches"),
+            ("BUILD", "READMEs that sell",
+             "For every project: problem, demo link, screenshot, how to run, results, limitations. Pin your best 4 repos on GitHub.",
+             "8 READMEs updated"),
+            ("BUILD", "Profile + portfolio",
+             "GitHub profile README, update your personal website/CV with project links and one-line results.",
+             "Profile and site updated"),
+            ("BUILD", "Demo videos",
+             "Record 2-3 minute walk-throughs of both capstones: problem, demo, what you'd improve.",
+             "Videos linked in READMEs"),
+            ("BUILD", "Write it up",
+             "Write a post: what you built in 3 months, what failed, what you learned. Publish on LinkedIn or a blog.",
+             "Post published"),
+            ("REVIEW", "Explain your projects",
+             "Practise explaining each project aloud in 2 minutes: problem, approach, result, limits, what's next. Draft your next 3-month plan.",
+             "next_steps.md"),
+        ],
+        demo="Portfolio launched, next 3-month plan drafted",
+    ),
+]
+
+
+def build_days():
+    """Flatten WEEKS into 84 day dicts."""
+    days = []
+    n = 0
+    for w_index, week in enumerate(WEEKS, start=1):
+        for d_index, (track, title, do, out) in enumerate(week["days"]):
+            n += 1
+            days.append(dict(n=n, week=w_index, weekday=d_index, track=track,
+                             title=title, do=do, out=out,
+                             theme=week["theme"], project=week["project"]))
+        n += 1
+        days.append(dict(
+            n=n, week=w_index, weekday=6, track="REVIEW",
+            title=f"Week {w_index} review + push",
+            do=("Write your weekly journal: what worked, what broke, what you'd do differently. "
+                "Tick off the week's days and push everything with `python tools/daylog.py`."),
+            out=week["demo"], theme=week["theme"], project=week["project"]))
+    return days
+
+
+if __name__ == "__main__":
+    ds = build_days()
+    print(len(ds), "days;", START_DATE.strftime("%A"), "start")

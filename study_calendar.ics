@@ -1,0 +1,1586 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//healthcare-ai-journey//study plan//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Healthcare AI + Automation: 12-week plan
+X-WR-TIMEZONE:Africa/Accra
+BEGIN:VEVENT
+UID:hai-journey-day01@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261012T190000Z
+DTEND:20261012T203000Z
+SUMMARY:Day 1 | PYTHON: Environment + Git workflow
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Install Python 3.12 + VS Code\, create a venv\, clone/re
+ organise your healthcare-ai-journey repo with the folder layout from the R
+ EADME. Do 10 mini-exercises (functions\, loops\, conditionals) to test out
+  of the basics you already know.\n\nSHIP: First commit with the new repo l
+ ayout + exercises/week01.py\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 1 | PYTHON: Environment + Git workflow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day02@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261013T190000Z
+DTEND:20261013T203000Z
+SUMMARY:Day 2 | PYTHON: Data structures + files
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Lists\, dicts\, sets\, comprehensions. Read/write CSV an
+ d JSON. Parse a CSV of SYNTHETIC patient vitals into a list of dicts and c
+ ompute averages.\n\nSHIP: exercises/vitals_parse.py\n\nWhen done\, log it:
+  python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 2 | PYTHON: Data structures + files
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day03@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261014T190000Z
+DTEND:20261014T203000Z
+SUMMARY:Day 3 | HEALTH AI: Health data 101 + privacy
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Skim what EHRs\, ICD-10 and FHIR are (30 min). Read the 
+ basics of Ghana's Data Protection Act\, 2012 (Act 843). Write data-rules.m
+ d: never use real patient data\, de-identify\, keep secrets out of Git. Ge
+ nerate 50 synthetic patients with Python's random module or Faker.\n\nSHIP
+ : data-rules.md + synthetic_patients.csv\n\nWhen done\, log it: python too
+ ls/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 3 | HEALTH AI: Health data 101 + privacy
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day04@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261015T190000Z
+DTEND:20261015T203000Z
+SUMMARY:Day 4 | AUTOMATION: Folder organiser script
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Use pathlib + argparse to build a script that sorts a me
+ ssy folder by file type/date. Add a --dry-run flag and logging.\n\nSHIP: e
+ xercises/organiser.py committed\n\nWhen done\, log it: python tools/daylog
+ .py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 4 | AUTOMATION: Folder organiser script
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day05@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261016T190000Z
+DTEND:20261016T203000Z
+SUMMARY:Day 5 | BUILD: Vitals Logger CLI: core
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Build a command-line tool: add\, list and summarise read
+ ings (blood pressure\, temperature\, glucose) stored in JSON. Flag out-of-
+ range values using simple documented thresholds.\n\nSHIP: Working add/list
+ /summary commands\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 5 | BUILD: Vitals Logger CLI: core
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day06@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261017T100000Z
+DTEND:20261017T130000Z
+SUMMARY:Day 6 | BUILD: Vitals Logger CLI: tests + README
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Write 5 pytest tests\, add a README with usage examples\
+ , tidy the code into functions.\n\nSHIP: Project 0 pushed to GitHub with R
+ EADME\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 6 | BUILD: Vitals Logger CLI: tests + README
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day07@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261018T170000Z
+DTEND:20261018T180000Z
+SUMMARY:Day 7 | REVIEW: Week 1 review + push
+DESCRIPTION:Week 1: Setup + Python fast-track\nProject: Project 0: Vitals L
+ ogger CLI\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn 
+ exercise).\n\nDO: Write your weekly journal: what worked\, what broke\, wh
+ at you'd do differently. Tick off the week's days and push everything with
+  `python tools/daylog.py`.\n\nSHIP: Vitals Logger CLI works and has tests\
+ n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 7 | REVIEW: Week 1 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day08@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261019T190000Z
+DTEND:20261019T203000Z
+SUMMARY:Day 8 | PYTHON: pandas I
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: DataFrames\, read_csv\, head/info/describe
+ \, selecting and filtering. Load the UCI Heart Disease dataset and answer 
+ 5 questions about it.\n\nSHIP: notebooks/01_heart_intro.ipynb\n\nWhen done
+ \, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 8 | PYTHON: pandas I
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day09@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261020T190000Z
+DTEND:20261020T203000Z
+SUMMARY:Day 9 | HEALTH AI: Cleaning clinical data
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: Handle missing values\, odd codes\, outlie
+ rs\, wrong dtypes. Write a data dictionary for the heart dataset and log e
+ very cleaning decision with a reason.\n\nSHIP: data_dictionary.md + cleane
+ d CSV\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 9 | HEALTH AI: Cleaning clinical data
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day10@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261021T190000Z
+DTEND:20261021T203000Z
+SUMMARY:Day 10 | PYTHON: pandas II + SQL tie-in
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: groupby\, merge\, pivot. Load the data int
+ o SQLite and rewrite 5 of your pandas queries in SQL (you already know SQL
+ \, so use it as a cross-check).\n\nSHIP: queries.sql + matching pandas cod
+ e\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 10 | PYTHON: pandas II + SQL tie-in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day11@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261022T190000Z
+DTEND:20261022T203000Z
+SUMMARY:Day 11 | AUTOMATION: APIs with requests
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: Pull Ghana indicators from the WHO Global 
+ Health Observatory open data API into a CSV. Add error handling\, timeouts
+  and retries.\n\nSHIP: scripts/fetch_who_ghana.py\n\nWhen done\, log it: p
+ ython tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 11 | AUTOMATION: APIs with requests
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day12@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261023T190000Z
+DTEND:20261023T203000Z
+SUMMARY:Day 12 | BUILD: Explorer notebook
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: Answer 8 questions about the heart data pl
+ us Ghana WHO indicators in one clean notebook\, with a short written findi
+ ng under each.\n\nSHIP: Notebook with 8 questions answered\n\nWhen done\, 
+ log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 12 | BUILD: Explorer notebook
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day13@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261024T100000Z
+DTEND:20261024T130000Z
+SUMMARY:Day 13 | BUILD: Charts + findings
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: Make 6 clear charts (matplotlib/seaborn)\,
+  label axes\, write a one-page summary of findings and limits of the data.
+ \n\nSHIP: Charts + findings.md pushed\n\nWhen done\, log it: python tools/
+ daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 13 | BUILD: Charts + findings
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day14@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+SUMMARY:Day 14 | REVIEW: Week 2 review + push
+DESCRIPTION:Week 2: pandas + SQL for health data\nProject: Project 1: Healt
+ h Data Explorer (start)\n\nStart with a 15-min Python warm-up (Exercism or
+  Kaggle Learn exercise).\n\nDO: Write your weekly journal: what worked\, w
+ hat broke\, what you'd do differently. Tick off the week's days and push e
+ verything with `python tools/daylog.py`.\n\nSHIP: Explorer notebook with 6
+  charts and findings\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 14 | REVIEW: Week 2 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day15@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261026T190000Z
+DTEND:20261026T203000Z
+SUMMARY:Day 15 | PYTHON: Modules\, type hints\, structure
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Refactor last week's notebook code into a
+  src/ package: functions\, type hints\, docstrings.\n\nSHIP: src/health_ex
+ plorer/ package\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 15 | PYTHON: Modules\, type hints\, structure
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day16@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261027T190000Z
+DTEND:20261027T203000Z
+SUMMARY:Day 16 | HEALTH AI: EDA done right
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Correlations\, class balance\, stratified
+  summaries by sex/age. Ask: who is represented in this dataset\, and how i
+ s that different from patients in Ghana?\n\nSHIP: Bias/representativeness 
+ section in findings.md\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 16 | HEALTH AI: EDA done right
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day17@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261028T190000Z
+DTEND:20261028T203000Z
+SUMMARY:Day 17 | PYTHON: Streamlit basics
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Widgets\, layout\, caching. Build a skele
+ ton app that loads your cleaned data and shows a table.\n\nSHIP: app.py sk
+ eleton running locally\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 17 | PYTHON: Streamlit basics
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day18@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261029T190000Z
+DTEND:20261029T203000Z
+SUMMARY:Day 18 | AUTOMATION: Email + scheduling
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Send an email from Python (smtplib or an 
+ email API) using secrets from a .env file. Schedule a script with cron / T
+ ask Scheduler. Never commit .env.\n\nSHIP: scripts/send_report.py + .gitig
+ nore with .env\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 18 | AUTOMATION: Email + scheduling
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day19@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261030T190000Z
+DTEND:20261030T203000Z
+SUMMARY:Day 19 | BUILD: Streamlit dashboard
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Turn the explorer into a dashboard with f
+ ilters (age\, sex\, outcome) and 3 live charts.\n\nSHIP: Dashboard working
+  locally\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 19 | BUILD: Streamlit dashboard
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day20@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261031T100000Z
+DTEND:20261031T130000Z
+SUMMARY:Day 20 | BUILD: Deploy + README
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Deploy to Streamlit Community Cloud\, add
+  screenshots and a how-to-run section to the README.\n\nSHIP: Live link in
+  README\, Project 1 shipped\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 20 | BUILD: Deploy + README
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day21@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261101T170000Z
+DTEND:20261101T180000Z
+SUMMARY:Day 21 | REVIEW: Week 3 review + push
+DESCRIPTION:Week 3: Dashboards + scheduled scripts\nProject: Project 1: Hea
+ lth Data Explorer (ship)\n\nStart with a 15-min Python warm-up (Exercism o
+ r Kaggle Learn exercise).\n\nDO: Write your weekly journal: what worked\, 
+ what broke\, what you'd do differently. Tick off the week's days and push 
+ everything with `python tools/daylog.py`.\n\nSHIP: Dashboard deployed with
+  a live link\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 21 | REVIEW: Week 3 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day22@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261102T190000Z
+DTEND:20261102T203000Z
+SUMMARY:Day 22 | PYTHON: Errors\, logging\, pytest
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: try/except done properly\
+ , the logging module\, pytest fixtures. Add logging and tests to your fetc
+ h script.\n\nSHIP: tests/ folder with 5+ tests\n\nWhen done\, log it: pyth
+ on tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 22 | PYTHON: Errors\, logging\, pytest
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day23@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261103T190000Z
+DTEND:20261103T203000Z
+SUMMARY:Day 23 | AUTOMATION: RSS + storage
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: Fetch health news from pu
+ blic RSS feeds (e.g. WHO)\, dedupe by URL\, store in SQLite.\n\nSHIP: scri
+ pts/fetch_news.py + news.db schema\n\nWhen done\, log it: python tools/day
+ log.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 23 | AUTOMATION: RSS + storage
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day24@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261104T190000Z
+DTEND:20261104T203000Z
+SUMMARY:Day 24 | AUTOMATION: LLM summaries
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: Call an LLM API (Claude o
+ r any provider) to summarise each article in 2 sentences. Keep API keys in
+  env vars\, cap costs with a daily item limit.\n\nSHIP: summarise.py with 
+ a prompt you can explain\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 24 | AUTOMATION: LLM summaries
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day25@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261105T190000Z
+DTEND:20261105T203000Z
+SUMMARY:Day 25 | HEALTH AI: First ML model (preview)
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: Train/test split\, overfi
+ tting\, accuracy vs other metrics. Fit a logistic regression on the heart 
+ data in 20 lines and read the results critically.\n\nSHIP: notebooks/04_fi
+ rst_model.ipynb\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 25 | HEALTH AI: First ML model (preview)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day26@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261106T190000Z
+DTEND:20261106T203000Z
+SUMMARY:Day 26 | BUILD: Digest pipeline
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: Wire it together: fetch\,
+  dedupe\, summarise\, build an HTML/plain-text digest\, email it to yourse
+ lf.\n\nSHIP: End-to-end run succeeds locally\n\nWhen done\, log it: python
+  tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 26 | BUILD: Digest pipeline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day27@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261107T100000Z
+DTEND:20261107T130000Z
+SUMMARY:Day 27 | BUILD: GitHub Actions cron
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: Run the pipeline daily wi
+ th a GitHub Actions schedule and repo secrets. Add a README with an archit
+ ecture sketch.\n\nSHIP: Project 2 live and running daily\n\nWhen done\, lo
+ g it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 27 | BUILD: GitHub Actions cron
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day28@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261108T170000Z
+DTEND:20261108T180000Z
+SUMMARY:Day 28 | REVIEW: Week 4 review + push
+DESCRIPTION:Week 4: Automation I: Daily Health Digest\nProject: Project 2: 
+ Daily Health Digest + Month 1 checkpoint\n\nStart with a 15-min Python war
+ m-up (Exercism or Kaggle Learn exercise).\n\nDO: Write your weekly journal
+ : what worked\, what broke\, what you'd do differently. Tick off the week'
+ s days and push everything with `python tools/daylog.py`.\n\nSHIP: Month 1
+  checkpoint: 3 projects shipped\, repo README updated\n\nWhen done\, log i
+ t: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 28 | REVIEW: Week 4 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day29@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261109T190000Z
+DTEND:20261109T203000Z
+SUMMARY:Day 29 | PYTHON: NumPy + sklearn pipelines
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: NumPy essentials\, then sklearn Pipeline
+  and ColumnTransformer so preprocessing is part of the model.\n\nSHIP: exe
+ rcises/pipelines.py\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 29 | PYTHON: NumPy + sklearn pipelines
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day30@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261110T190000Z
+DTEND:20261110T203000Z
+SUMMARY:Day 30 | HEALTH AI: Baseline models
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: Logistic regression\, random forest and 
+ gradient boosting on the Pima diabetes or heart dataset with cross-validat
+ ion. Compare them in one table.\n\nSHIP: Model comparison table\n\nWhen do
+ ne\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 30 | HEALTH AI: Baseline models
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day31@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261111T190000Z
+DTEND:20261111T203000Z
+SUMMARY:Day 31 | PYTHON: Features + data leakage
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: Feature engineering and a leakage hunt: 
+ check whether any column gives away the label or comes from after diagnosi
+ s. Document what you find.\n\nSHIP: leakage_check.md\n\nWhen done\, log it
+ : python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 31 | PYTHON: Features + data leakage
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day32@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261112T190000Z
+DTEND:20261112T203000Z
+SUMMARY:Day 32 | AUTOMATION: Automated experiments
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: Script that trains several models from a
+  YAML config and logs results to a CSV\, so you can rerun everything with 
+ one command.\n\nSHIP: run_experiments.py + config.yaml\n\nWhen done\, log 
+ it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 32 | AUTOMATION: Automated experiments
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day33@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261113T190000Z
+DTEND:20261113T203000Z
+SUMMARY:Day 33 | BUILD: Risk Predictor: training
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: Create the project folder with a clean t
+ rain.py\, evaluation table and saved results.\n\nSHIP: projects/03-risk-pr
+ edictor/train.py working\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 33 | BUILD: Risk Predictor: training
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day34@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261114T100000Z
+DTEND:20261114T130000Z
+SUMMARY:Day 34 | BUILD: Tune + save
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: Hyperparameter tuning (GridSearchCV or O
+ ptuna)\, save the best model with joblib\, push.\n\nSHIP: model.joblib + m
+ etrics.json\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 34 | BUILD: Tune + save
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day35@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261115T170000Z
+DTEND:20261115T180000Z
+SUMMARY:Day 35 | REVIEW: Week 5 review + push
+DESCRIPTION:Week 5: ML for clinical prediction I\nProject: Project 3: Disea
+ se Risk Predictor (build)\n\nStart with a 15-min Python warm-up (Exercism 
+ or Kaggle Learn exercise).\n\nDO: Write your weekly journal: what worked\,
+  what broke\, what you'd do differently. Tick off the week's days and push
+  everything with `python tools/daylog.py`.\n\nSHIP: Trained\, tuned risk m
+ odel with reproducible training script\n\nWhen done\, log it: python tools
+ /daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 35 | REVIEW: Week 5 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day36@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261116T190000Z
+DTEND:20261116T203000Z
+SUMMARY:Day 36 | HEALTH AI: Clinical metrics
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Sensitivity\, specificity\, ROC-
+ AUC\, precision-recall\, thresholds. Why accuracy misleads for screening. 
+ Pick a threshold for a screening use case and justify it.\n\nSHIP: metrics
+ _notes.md\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 36 | HEALTH AI: Clinical metrics
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day37@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261117T190000Z
+DTEND:20261117T203000Z
+SUMMARY:Day 37 | PYTHON: Evaluation plots
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Matplotlib: ROC curve\, calibrat
+ ion curve\, confusion matrix. Package them into a reusable evaluate.py.\n\
+ nSHIP: evaluate.py + 3 saved plots\n\nWhen done\, log it: python tools/day
+ log.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 37 | PYTHON: Evaluation plots
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day38@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261118T190000Z
+DTEND:20261118T203000Z
+SUMMARY:Day 38 | HEALTH AI: Explainability + fairness
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Permutation importance or SHAP. 
+ Check performance by subgroup (sex\, age bands) and record gaps.\n\nSHIP: 
+ explainability.ipynb\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 38 | HEALTH AI: Explainability + fairness
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day39@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261119T190000Z
+DTEND:20261119T203000Z
+SUMMARY:Day 39 | AUTOMATION: Model as an API
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Wrap the model in a FastAPI /pre
+ dict endpoint with pydantic validation. Test with curl and pytest.\n\nSHIP
+ : api.py + tests\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 39 | AUTOMATION: Model as an API
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day40@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261120T190000Z
+DTEND:20261120T203000Z
+SUMMARY:Day 40 | BUILD: Model card + UI
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Write the model card (intended u
+ se\, data\, metrics\, limits\, ethics) and a Streamlit risk-calculator tha
+ t calls your API.\n\nSHIP: MODEL_CARD.md + UI working\n\nWhen done\, log i
+ t: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 40 | BUILD: Model card + UI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day41@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261121T100000Z
+DTEND:20261121T130000Z
+SUMMARY:Day 41 | BUILD: Deploy + polish
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Deploy the UI (and API if you ca
+ n)\, add a clear 'not medical advice' notice\, README with results. Option
+ al: Dockerfile.\n\nSHIP: Project 3 shipped with live link\n\nWhen done\, l
+ og it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 41 | BUILD: Deploy + polish
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day42@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261122T170000Z
+DTEND:20261122T180000Z
+SUMMARY:Day 42 | REVIEW: Week 6 review + push
+DESCRIPTION:Week 6: Evaluation that matters in healthcare\nProject: Project
+  3: Disease Risk Predictor (ship)\n\nStart with a 15-min Python warm-up (E
+ xercism or Kaggle Learn exercise).\n\nDO: Write your weekly journal: what 
+ worked\, what broke\, what you'd do differently. Tick off the week's days 
+ and push everything with `python tools/daylog.py`.\n\nSHIP: Risk predictor
+  with model card and live demo\n\nWhen done\, log it: python tools/daylog.
+ py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 42 | REVIEW: Week 6 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day43@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261123T190000Z
+DTEND:20261123T203000Z
+SUMMARY:Day 43 | PYTHON: Structured data with pydantic
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: Pydantic models\, JSON schema\, v
+ alidating messy input. Practise turning free text into typed objects.\n\nS
+ HIP: exercises/pydantic_schemas.py\n\nWhen done\, log it: python tools/day
+ log.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 43 | PYTHON: Structured data with pydantic
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day44@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261124T190000Z
+DTEND:20261124T203000Z
+SUMMARY:Day 44 | HEALTH AI: Prompting on clinical text
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: Generate 30 SYNTHETIC clinical no
+ tes (LLM or Synthea). Write prompts to summarise and extract symptoms\, me
+ dications and dosages. Never use real patient notes.\n\nSHIP: data/synthet
+ ic_notes/ + prompts.md\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 44 | HEALTH AI: Prompting on clinical text
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day45@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261125T190000Z
+DTEND:20261125T203000Z
+SUMMARY:Day 45 | AUTOMATION: Extraction pipeline
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: LLM output to JSON validated by p
+ ydantic to CSV. Add retries when the JSON is invalid.\n\nSHIP: extract.py 
+ producing notes.csv\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 45 | AUTOMATION: Extraction pipeline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day46@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261126T190000Z
+DTEND:20261126T203000Z
+SUMMARY:Day 46 | HEALTH AI: Evaluate the LLM
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: Hand-label a 20-note gold set. Me
+ asure precision/recall per field and keep a failure log of what the model 
+ gets wrong.\n\nSHIP: eval/results.md\n\nWhen done\, log it: python tools/d
+ aylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 46 | HEALTH AI: Evaluate the LLM
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day47@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261127T190000Z
+DTEND:20261127T203000Z
+SUMMARY:Day 47 | BUILD: Extractor app
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: Streamlit app: paste a note\, get
+  a structured summary and extracted fields side by side.\n\nSHIP: App work
+ ing locally\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 47 | BUILD: Extractor app
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day48@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261128T100000Z
+DTEND:20261128T130000Z
+SUMMARY:Day 48 | BUILD: Guardrails + README
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: Add disclaimers\, a PII-scrub ste
+ p\, refuse-to-diagnose behaviour. README with your eval numbers and known 
+ failures.\n\nSHIP: Project 4 shipped\n\nWhen done\, log it: python tools/d
+ aylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 48 | BUILD: Guardrails + README
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day49@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261129T170000Z
+DTEND:20261129T180000Z
+SUMMARY:Day 49 | REVIEW: Week 7 review + push
+DESCRIPTION:Week 7: LLMs for health text\nProject: Project 4: Clinical Note
+  Extractor (synthetic data only)\n\nStart with a 15-min Python warm-up (Ex
+ ercism or Kaggle Learn exercise).\n\nDO: Write your weekly journal: what w
+ orked\, what broke\, what you'd do differently. Tick off the week's days a
+ nd push everything with `python tools/daylog.py`.\n\nSHIP: Extractor app w
+ ith measured accuracy and failure log\n\nWhen done\, log it: python tools/
+ daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 49 | REVIEW: Week 7 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day50@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261130T190000Z
+DTEND:20261130T203000Z
+SUMMARY:Day 50 | PYTHON: Documents to chunks
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Parse PDFs (pypd
+ f)\, clean text\, chunk it sensibly. Learn what embeddings are by playing 
+ with a small example.\n\nSHIP: ingest/parse_pdf.py\n\nWhen done\, log it: 
+ python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 50 | PYTHON: Documents to chunks
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day51@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261201T190000Z
+DTEND:20261201T203000Z
+SUMMARY:Day 51 | AUTOMATION: Ingestion pipeline
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Public guideline
+  PDFs (e.g. WHO guidance or Ghana's standard treatment guidelines) to chun
+ ks to embeddings to a vector store (Chroma or FAISS).\n\nSHIP: ingest pipe
+ line runs end to end\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 51 | AUTOMATION: Ingestion pipeline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day52@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261202T190000Z
+DTEND:20261202T203000Z
+SUMMARY:Day 52 | HEALTH AI: RAG with citations
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Retrieve the top
+  chunks\, answer using only them\, and show source page numbers. Make the 
+ model say 'I don't know' when the guidelines don't cover the question.\n\n
+ SHIP: rag.py with citations\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 52 | HEALTH AI: RAG with citations
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day53@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261203T190000Z
+DTEND:20261203T203000Z
+SUMMARY:Day 53 | AUTOMATION: Evaluate RAG
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Write 15 test qu
+ estions. Check retrieval hits\, groundedness and the I-don't-know behaviou
+ r. Fix the weakest 3.\n\nSHIP: eval/rag_eval.md\n\nWhen done\, log it: pyt
+ hon tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 53 | AUTOMATION: Evaluate RAG
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day54@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261204T190000Z
+DTEND:20261204T203000Z
+SUMMARY:Day 54 | BUILD: Chat UI
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Streamlit chat i
+ nterface with expandable source snippets under every answer.\n\nSHIP: Chat
+  app working\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 54 | BUILD: Chat UI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day55@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261205T100000Z
+DTEND:20261205T130000Z
+SUMMARY:Day 55 | BUILD: Polish + month 2 write-up
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: README\, screens
+ hots\, limitations section. Write a short post on what you built in month 
+ 2.\n\nSHIP: Project 5 shipped\n\nWhen done\, log it: python tools/daylog.p
+ y
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 55 | BUILD: Polish + month 2 write-up
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day56@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261206T170000Z
+DTEND:20261206T180000Z
+SUMMARY:Day 56 | REVIEW: Week 8 review + push
+DESCRIPTION:Week 8: RAG + agents on health guidelines\nProject: Project 5: 
+ Guideline Q&A with citations + Month 2 checkpoint\n\nStart with a 15-min P
+ ython warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Write your weekl
+ y journal: what worked\, what broke\, what you'd do differently. Tick off 
+ the week's days and push everything with `python tools/daylog.py`.\n\nSHIP
+ : Month 2 checkpoint: 6 projects shipped\, one blog/LinkedIn draft\n\nWhen
+  done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 56 | REVIEW: Week 8 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day57@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261207T190000Z
+DTEND:20261207T203000Z
+SUMMARY:Day 57 | PYTHON: Project architecture
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Repo 
+ layout\, config handling\, modules\, Makefile or task runner. Set up both 
+ capstone repos/folders.\n\nSHIP: projects/capstone-a/ and capstone-b/ skel
+ etons\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 57 | PYTHON: Project architecture
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day58@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261208T190000Z
+DTEND:20261208T203000Z
+SUMMARY:Day 58 | HEALTH AI: Capstone A spec
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: One-p
+ age spec: problem\, users\, dataset(s)\, success metrics\, risks\, what th
+ e tool will NOT do. Risk model + plain-language explanation layer\, built 
+ on Ghana-relevant context.\n\nSHIP: docs/spec.md\n\nWhen done\, log it: py
+ thon tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 58 | HEALTH AI: Capstone A spec
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day59@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261209T190000Z
+DTEND:20261209T203000Z
+SUMMARY:Day 59 | AUTOMATION: Capstone B spec
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Clini
+ c admin automation: intake form to extraction to triage category to notifi
+ cation to dashboard. Model the workflow as a BPMN diagram (you already kno
+ w BPMN).\n\nSHIP: docs/workflow.bpmn or .png + spec.md\n\nWhen done\, log 
+ it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 59 | AUTOMATION: Capstone B spec
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day60@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261210T190000Z
+DTEND:20261210T203000Z
+SUMMARY:Day 60 | HEALTH AI: Capstone A data pipeline
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Build
+  the cleaning/feature pipeline for Capstone A using your earlier work. Add
+  data checks.\n\nSHIP: pipeline.py + tests\n\nWhen done\, log it: python t
+ ools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 60 | HEALTH AI: Capstone A data pipeline
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day61@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261211T190000Z
+DTEND:20261211T203000Z
+SUMMARY:Day 61 | BUILD: Capstone A model
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Train
+ \, evaluate and tune using your Project 3 playbook. Record threshold choic
+ e and subgroup results.\n\nSHIP: Trained model + metrics\n\nWhen done\, lo
+ g it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 61 | BUILD: Capstone A model
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day62@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261212T100000Z
+DTEND:20261212T130000Z
+SUMMARY:Day 62 | BUILD: Capstone A API + tests
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: FastA
+ PI endpoint\, input validation\, tests\, simple CI with GitHub Actions.\n\
+ nSHIP: Green CI badge in README\n\nWhen done\, log it: python tools/daylog
+ .py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 62 | BUILD: Capstone A API + tests
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day63@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261213T170000Z
+DTEND:20261213T180000Z
+SUMMARY:Day 63 | REVIEW: Week 9 review + push
+DESCRIPTION:Week 9: Capstones: planning + Capstone A start\nProject: Capsto
+ ne A: Chronic Disease Risk Screening Assistant (Ghana focus)\n\nStart with
+  a 15-min Python warm-up (Exercism or Kaggle Learn exercise).\n\nDO: Write
+  your weekly journal: what worked\, what broke\, what you'd do differently
+ . Tick off the week's days and push everything with `python tools/daylog.p
+ y`.\n\nSHIP: Capstone A has spec\, model and API\; Capstone B has spec and
+  workflow\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 63 | REVIEW: Week 9 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day64@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261214T190000Z
+DTEND:20261214T203000Z
+SUMMARY:Day 64 | PYTHON: Quality pass
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Linting (ruff)\, formatting\, test coverage on the capston
+ e code. Fix the 5 worst smells.\n\nSHIP: Cleaner code\, coverage report\n\
+ nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 64 | PYTHON: Quality pass
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day65@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261215T190000Z
+DTEND:20261215T203000Z
+SUMMARY:Day 65 | HEALTH AI: Explanation layer
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Add feature explanations and an LLM-written plain-language
+  summary for a result\, with strict guardrails (no diagnosis\, advise seei
+ ng a clinician).\n\nSHIP: explain.py + guardrail tests\n\nWhen done\, log 
+ it: python tools/daylog.py
+CATEGORIES:HEALTH AI
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 65 | HEALTH AI: Explanation layer
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day66@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261216T190000Z
+DTEND:20261216T203000Z
+SUMMARY:Day 66 | AUTOMATION: n8n workflow basics
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Run n8n locally\, build a webhook-triggered workflow that 
+ calls your API and sends a notification. Compare it with doing the same in
+  Python.\n\nSHIP: workflows/n8n_intro.json exported\n\nWhen done\, log it:
+  python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 66 | AUTOMATION: n8n workflow basics
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day67@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261217T190000Z
+DTEND:20261217T203000Z
+SUMMARY:Day 67 | BUILD: Capstone A UI
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Streamlit interface: inputs\, result\, explanation\, clear
+  limits notice.\n\nSHIP: UI working\n\nWhen done\, log it: python tools/da
+ ylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 67 | BUILD: Capstone A UI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day68@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261218T190000Z
+DTEND:20261218T203000Z
+SUMMARY:Day 68 | BUILD: Capstone A deploy
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Deploy\, test from your phone\, fix what breaks.\n\nSHIP: 
+ Live link\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 68 | BUILD: Capstone A deploy
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day69@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261219T100000Z
+DTEND:20261219T130000Z
+SUMMARY:Day 69 | BUILD: Capstone A docs
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Model card\, README with demo GIF\, ethics and limitations
+  section.\n\nSHIP: Capstone A shipped\n\nWhen done\, log it: python tools/
+ daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 69 | BUILD: Capstone A docs
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day70@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261220T170000Z
+DTEND:20261220T180000Z
+SUMMARY:Day 70 | REVIEW: Week 10 review + push
+DESCRIPTION:Week 10: Capstone A finish + workflow tools\nProject: Capstone 
+ A: ship\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn ex
+ ercise).\n\nDO: Write your weekly journal: what worked\, what broke\, what
+  you'd do differently. Tick off the week's days and push everything with `
+ python tools/daylog.py`.\n\nSHIP: Capstone A live with model card\n\nWhen 
+ done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 70 | REVIEW: Week 10 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day71@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261221T190000Z
+DTEND:20261221T203000Z
+SUMMARY:Day 71 | AUTOMATION: Intake + webhook
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: A simple intake form (FastAPI form or Google For
+ m) that sends data to your pipeline. Use synthetic submissions only.\n\nSH
+ IP: intake endpoint + 10 test submissions\n\nWhen done\, log it: python to
+ ols/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 71 | AUTOMATION: Intake + webhook
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day72@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261222T190000Z
+DTEND:20261222T203000Z
+SUMMARY:Day 72 | AUTOMATION: LLM extraction + urgency
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: Extract key fields and assign a triage category 
+ with a confidence score. Low confidence goes to a human.\n\nSHIP: triage.p
+ y + prompts\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 72 | AUTOMATION: LLM extraction + urgency
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day73@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261223T190000Z
+DTEND:20261223T203000Z
+SUMMARY:Day 73 | PYTHON: Storage layer
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: SQLite (or Postgres) tables for submissions\, ex
+ tracted fields\, decisions\, audit log. Write the data access code and tes
+ ts.\n\nSHIP: db.py + tests\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 73 | PYTHON: Storage layer
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day74@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261224T190000Z
+DTEND:20261224T203000Z
+SUMMARY:Day 74 | AUTOMATION: Notifications
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: Notify the right person by email or Telegram bot
+  depending on category. Add rate limits and failure handling.\n\nSHIP: not
+ ify.py working\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:AUTOMATION
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 74 | AUTOMATION: Notifications
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day75@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261225T190000Z
+DTEND:20261225T203000Z
+SUMMARY:Day 75 | BUILD: Human-in-the-loop review
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: Review screen where a person approves or correct
+ s the AI's triage. Log every correction.\n\nSHIP: Review UI working\n\nWhe
+ n done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 75 | BUILD: Human-in-the-loop review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day76@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261226T100000Z
+DTEND:20261226T130000Z
+SUMMARY:Day 76 | BUILD: Dashboard
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: Streamlit dashboard: volume per day\, categories
+ \, AI-vs-human agreement rate.\n\nSHIP: Dashboard with real metrics\n\nWhe
+ n done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 76 | BUILD: Dashboard
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day77@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261227T170000Z
+DTEND:20261227T180000Z
+SUMMARY:Day 77 | REVIEW: Week 11 review + push
+DESCRIPTION:Week 11: Capstone B build\nProject: Capstone B: Clinic Admin Au
+ tomation Pipeline\n\nStart with a 15-min Python warm-up (Exercism or Kaggl
+ e Learn exercise).\n\nDO: Write your weekly journal: what worked\, what br
+ oke\, what you'd do differently. Tick off the week's days and push everyth
+ ing with `python tools/daylog.py`.\n\nSHIP: Capstone B working end to end 
+ on synthetic data\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 77 | REVIEW: Week 11 review + push
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day78@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261228T190000Z
+DTEND:20261228T203000Z
+SUMMARY:Day 78 | PYTHON: Final code cleanup
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: Refactor\, lint\, raise test coverage on both capstones. 
+ Delete dead code and unused notebooks.\n\nSHIP: Clean main branches\n\nWhe
+ n done\, log it: python tools/daylog.py
+CATEGORIES:PYTHON
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 78 | PYTHON: Final code cleanup
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day79@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261229T190000Z
+DTEND:20261229T203000Z
+SUMMARY:Day 79 | BUILD: READMEs that sell
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: For every project: problem\, demo link\, screenshot\, how
+  to run\, results\, limitations. Pin your best 4 repos on GitHub.\n\nSHIP:
+  8 READMEs updated\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 79 | BUILD: READMEs that sell
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day80@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261230T190000Z
+DTEND:20261230T203000Z
+SUMMARY:Day 80 | BUILD: Profile + portfolio
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: GitHub profile README\, update your personal website/CV w
+ ith project links and one-line results.\n\nSHIP: Profile and site updated\
+ n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 80 | BUILD: Profile + portfolio
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day81@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20261231T190000Z
+DTEND:20261231T203000Z
+SUMMARY:Day 81 | BUILD: Demo videos
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: Record 2-3 minute walk-throughs of both capstones: proble
+ m\, demo\, what you'd improve.\n\nSHIP: Videos linked in READMEs\n\nWhen d
+ one\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 81 | BUILD: Demo videos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day82@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20270101T190000Z
+DTEND:20270101T203000Z
+SUMMARY:Day 82 | BUILD: Write it up
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: Write a post: what you built in 3 months\, what failed\, 
+ what you learned. Publish on LinkedIn or a blog.\n\nSHIP: Post published\n
+ \nWhen done\, log it: python tools/daylog.py
+CATEGORIES:BUILD
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 82 | BUILD: Write it up
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day83@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20270102T100000Z
+DTEND:20270102T130000Z
+SUMMARY:Day 83 | REVIEW: Explain your projects
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: Practise explaining each project aloud in 2 minutes: prob
+ lem\, approach\, result\, limits\, what's next. Draft your next 3-month pl
+ an.\n\nSHIP: next_steps.md\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 83 | REVIEW: Explain your projects
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hai-journey-day84@healthcare-ai-journey
+DTSTAMP:20261007T230241Z
+DTSTART:20270103T170000Z
+DTEND:20270103T180000Z
+SUMMARY:Day 84 | REVIEW: Week 12 review + push
+DESCRIPTION:Week 12: Polish\, publish\, plan what's next\nProject: Portfoli
+ o launch\n\nStart with a 15-min Python warm-up (Exercism or Kaggle Learn e
+ xercise).\n\nDO: Write your weekly journal: what worked\, what broke\, wha
+ t you'd do differently. Tick off the week's days and push everything with 
+ `python tools/daylog.py`.\n\nSHIP: Portfolio launched\, next 3-month plan 
+ drafted\n\nWhen done\, log it: python tools/daylog.py
+CATEGORIES:REVIEW
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Day 84 | REVIEW: Week 12 review + push
+END:VALARM
+END:VEVENT
+END:VCALENDAR
