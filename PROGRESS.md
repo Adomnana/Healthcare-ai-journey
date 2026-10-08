@@ -6,7 +6,7 @@
 ## Week 1: Setup + Python fast-track
 *Project 0: Vitals Logger CLI*
 
-- [x] Day 1 (PYTHON): Environment + Git workflow - what you did today
+- [x] Day 1 (PYTHON): Environment + Git workflow - Set up venv and folders, did 10 exercises
 - [ ] Day 2 (PYTHON): Data structures + files
 - [ ] Day 3 (HEALTH AI): Health data 101 + privacy
 - [ ] Day 4 (AUTOMATION): Folder organiser script
