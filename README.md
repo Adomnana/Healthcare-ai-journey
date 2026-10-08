@@ -3,7 +3,7 @@
 A 12-week, project-based path through **Python + Healthcare AI + AI Automation**, learned side by side. Every week ends with something built and pushed to GitHub.
 
 <!-- progress:start -->
-**Progress:** `--------------------` 0% (0/84 days) | current streak: 0 day(s)
+**Progress:** `--------------------` 1% (1/84 days) | current streak: 1 day(s)
 <!-- progress:end -->
 
 ## How it works
