@@ -10,6 +10,7 @@ Import the .ics into Google/Apple/Outlook Calendar. Re-importing after edits
 updates the same events (stable UIDs) in most calendar apps.
 """
 import argparse
+import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -41,6 +42,11 @@ def fold(line: str) -> str:
     return "\r\n ".join(p.decode("utf-8") for p in parts)
 
 
+def first_url(d):
+    m = re.search(r"https?://[^\s;,)]+", d["res"])
+    return m.group(0) if m else d["video"]
+
+
 def build_ics(start: date) -> str:
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = [
@@ -61,7 +67,9 @@ def build_ics(start: date) -> str:
                 f"{WARMUP}\n\n"
                 f"DO: {d['do']}\n\n"
                 f"SHIP: {d['out']}\n\n"
-                f"When done, log it: python tools/daylog.py")
+                f"RESOURCES: {d['res']}\n\n"
+                + (f"WATCH (YouTube search, pick a recent tutorial): {d['video']}\n\n" if d["video"] else "")
+                + "When done, log it: python tools/daylog.py")
         lines += [
             "BEGIN:VEVENT",
             f"UID:hai-journey-day{d['n']:02d}@healthcare-ai-journey",
@@ -71,6 +79,7 @@ def build_ics(start: date) -> str:
             f"SUMMARY:{esc(summary)}",
             f"DESCRIPTION:{esc(desc)}",
             f"CATEGORIES:{esc(d['track'])}",
+            *([f"URL:{first_url(d)}"] if first_url(d) else []),
             "BEGIN:VALARM", "TRIGGER:-PT15M", "ACTION:DISPLAY",
             f"DESCRIPTION:{esc(summary)}", "END:VALARM",
             "END:VEVENT",

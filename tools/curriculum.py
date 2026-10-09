@@ -7,7 +7,9 @@ Edit START_DATE if you start on a different day. Everything else
 Daily rhythm: 15-min Python warm-up, then the day's task.
 Tracks: PYTHON, HEALTH AI, AUTOMATION, BUILD, REVIEW.
 """
+import re
 from datetime import date
+from urllib.parse import quote_plus
 
 START_DATE = date(2026, 10, 8)  # Day 1 (any weekday works)
 
@@ -25,7 +27,8 @@ def slot_for(track, day):
     return SLOTS[(kind, day.weekday() >= 5)]
 
 
-WARMUP = "Start with a 15-min Python warm-up (Exercism or Kaggle Learn exercise)."
+WARMUP = ("Start with a 15-min Python warm-up: https://exercism.org/tracks/python "
+          "or https://www.kaggle.com/learn/python")
 
 # Each week: theme, project focus, 6 day tuples (Mon-Sat), Sunday demo line.
 # Day tuple = (track, title, what to do, what to ship/commit)
@@ -333,6 +336,140 @@ WEEKS = [
 ]
 
 
+# Day-specific starting resources, keyed by day number. Pages move around: if a link
+# 404s, search the resource name. Sundays use the review resources below.
+REVIEW_RES = "Your journal/week-XX.md and PROGRESS.md; open your GitHub repo page afterwards to confirm the push."
+RESOURCES = {
+    1: "Exercism Python track (exercism.org/tracks/python); Python tutorial (docs.python.org/3/tutorial); VS Code Python setup (code.visualstudio.com/docs/python/python-tutorial); Pro Git book ch. 1-2 (git-scm.com/book)",
+    2: "Python tutorial: Data Structures + Input and Output (docs.python.org/3/tutorial); csv and json module docs; Kaggle Learn Python (kaggle.com/learn/python)",
+    3: "Ghana Data Protection Act 2012 (Act 843): Data Protection Commission, dataprotection.org.gh; FHIR overview (hl7.org/fhir/overview.html); ICD-10 browser (icd.who.int/browse10); Faker docs (faker.readthedocs.io)",
+    4: "Python docs: pathlib, argparse, logging (docs.python.org/3/library); Automate the Boring Stuff, files chapters (automatetheboringstuff.com)",
+    5: "argparse tutorial (docs.python.org/3/howto/argparse.html); json module docs; your Day 1-2 exercise code",
+    6: "pytest Get Started (docs.pytest.org); Make a README (makeareadme.com)",
+    8: "Kaggle Learn Pandas (kaggle.com/learn/pandas); 10 minutes to pandas (pandas.pydata.org); UCI Heart Disease dataset (archive.ics.uci.edu, search 'Heart Disease')",
+    9: "Kaggle Learn Data Cleaning (kaggle.com/learn/data-cleaning); pandas docs: Working with missing data",
+    10: "Kaggle Learn Intro to SQL (kaggle.com/learn/intro-to-sql); Python sqlite3 docs; pandas read_sql / to_sql docs",
+    11: "WHO Global Health Observatory OData API (search 'WHO GHO OData API'); requests Quickstart (requests.readthedocs.io)",
+    12: "Kaggle Learn Data Visualization (kaggle.com/learn/data-visualization); matplotlib quick start (matplotlib.org)",
+    13: "seaborn tutorial (seaborn.pydata.org/tutorial.html); matplotlib docs",
+    15: "Real Python: modules, packages and type hints (realpython.com); Python docs: typing",
+    16: "Paper: 'Datasheets for Datasets' (search the title); WHO guidance 'Ethics and governance of artificial intelligence for health'",
+    17: "Streamlit docs: Get started + API reference (docs.streamlit.io)",
+    18: "Python docs: smtplib, email; python-dotenv (pypi.org/project/python-dotenv); crontab.guru for cron schedules on Mac",
+    19: "Streamlit docs: widgets, layouts, charts (docs.streamlit.io)",
+    20: "Streamlit Community Cloud docs: Deploy your app (docs.streamlit.io)",
+    22: "pytest docs: fixtures; Python Logging HOWTO (docs.python.org/3/howto/logging.html)",
+    23: "feedparser docs (feedparser.readthedocs.io); WHO RSS feeds (search 'WHO RSS feeds'); sqlite3 docs",
+    24: "Your LLM provider's API quickstart and prompt engineering guide (Claude: docs.claude.com); GitHub docs: 'Removing sensitive data from a repository'",
+    25: "Kaggle Learn Intro to Machine Learning (kaggle.com/learn/intro-to-machine-learning); scikit-learn Getting Started (scikit-learn.org)",
+    26: "Python docs: email.message; Jinja2 docs, optional for HTML email (jinja.palletsprojects.com)",
+    27: "GitHub Actions Quickstart + 'schedule' event + 'Using secrets' (docs.github.com/actions)",
+    29: "NumPy absolute beginners guide (numpy.org/doc/stable/user/absolute_beginners.html); scikit-learn user guide: Pipelines and composite estimators",
+    30: "Pima Indians Diabetes dataset (search Kaggle or UCI); scikit-learn Cross-validation docs; Kaggle Learn Intermediate Machine Learning (kaggle.com/learn/intermediate-machine-learning)",
+    31: "Kaggle Intermediate ML: Data Leakage lesson; scikit-learn docs: Common pitfalls (data leakage)",
+    32: "PyYAML docs (pyyaml.org); argparse; pandas to_csv docs",
+    33: "scikit-learn docs: Model selection and evaluation; your Week 5 notebooks",
+    34: "scikit-learn GridSearchCV docs; Optuna (optuna.org); joblib persistence docs",
+    36: "scikit-learn Metrics docs: ROC, precision-recall; Google ML Crash Course: Classification metrics (developers.google.com/machine-learning/crash-course)",
+    37: "scikit-learn ConfusionMatrixDisplay and CalibrationDisplay docs; matplotlib docs",
+    38: "SHAP docs (shap.readthedocs.io); scikit-learn: Permutation feature importance; paper 'Model Cards for Model Reporting'",
+    39: "FastAPI tutorial (fastapi.tiangolo.com/tutorial); Pydantic docs (docs.pydantic.dev)",
+    40: "'Model Cards for Model Reporting' (search the title); Streamlit docs",
+    41: "Streamlit Community Cloud docs; optional: Docker Get Started (docs.docker.com/get-started)",
+    43: "Pydantic docs: Models and Validation; Python json docs",
+    44: "Synthea synthetic patients (synthetichealth.github.io/synthea); your LLM provider's prompt engineering guide (docs.claude.com)",
+    45: "Your LLM provider docs: structured output / tool use; tenacity retries (tenacity.readthedocs.io)",
+    46: "scikit-learn precision_recall_fscore_support docs; blog post 'Your AI Product Needs Evals' by Hamel Husain (search the title)",
+    47: "Streamlit docs: text_area, columns, session_state",
+    48: "Microsoft Presidio docs for PII detection (microsoft.github.io/presidio); WHO guidance on ethics and governance of AI for health",
+    50: "pypdf docs (pypdf.readthedocs.io); search 'chunking strategies for RAG'; search 'The Illustrated Word2vec' for embeddings intuition",
+    51: "Chroma docs (docs.trychroma.com); sentence-transformers (sbert.net) or your LLM provider's embeddings docs; Ghana Standard Treatment Guidelines (Ministry of Health Ghana) and WHO publications (who.int/publications)",
+    52: "Your LLM provider's RAG and citations docs (docs.claude.com, search 'citations')",
+    53: "Ragas docs, optional (docs.ragas.io); or a simple spreadsheet of 15 questions with pass/fail columns",
+    54: "Streamlit docs: st.chat_message and st.chat_input",
+    55: "makeareadme.com; your journal entries from weeks 5-8",
+    57: "Cookiecutter Data Science (cookiecutter-data-science.drivendata.org); Real Python: Python Application Layouts",
+    58: "Google People + AI Guidebook (pair.withgoogle.com/guidebook); search 'ML design doc template'",
+    59: "diagrams.net or bpmn.io (tools you already know); n8n docs overview (docs.n8n.io)",
+    60: "pandas docs; Great Expectations (greatexpectations.io) or plain assert checks",
+    61: "scikit-learn docs; your Project 3 model card and evaluate.py",
+    62: "FastAPI docs: Testing; GitHub Actions docs: Building and testing Python (docs.github.com/actions)",
+    64: "Ruff docs (docs.astral.sh/ruff); pytest-cov docs",
+    65: "Your LLM provider's docs on system prompts and safety; SHAP docs",
+    66: "n8n docs: Webhook node and running n8n locally (docs.n8n.io)",
+    67: "Streamlit docs",
+    68: "Streamlit Community Cloud docs; Hugging Face Spaces or Render docs for hosting an API",
+    69: "makeareadme.com; Kap screen recorder for GIFs (getkap.co); Model Cards paper",
+    71: "FastAPI docs: Form data; optionally Google Forms with Apps Script webhooks",
+    72: "Your LLM provider's structured output docs; your Week 7 extraction code",
+    73: "SQLite docs; SQLAlchemy tutorial (docs.sqlalchemy.org)",
+    74: "Telegram Bot API (core.telegram.org/bots); Python smtplib docs",
+    75: "Streamlit docs: forms and session_state; Google People + AI Guidebook",
+    76: "Streamlit charts docs; pandas groupby and resample docs",
+    78: "Ruff and pytest-cov docs; your own test failures",
+    79: "makeareadme.com; GitHub docs: pinning repos and profile README (docs.github.com)",
+    80: "GitHub docs: Managing your profile README; your personal website project",
+    81: "Built into Mac: QuickTime Player, File > New Screen Recording; or Loom free tier",
+    82: "Your journal/week-XX.md files as raw material; LinkedIn post or any blog platform",
+    83: "Mock interview partners (Pramp, or a friend); your READMEs as speaking notes",
+}
+
+
+# YouTube search queries per day. These open search results (links never go stale);
+# pick a recent, well-rated tutorial. Good channels: freeCodeCamp, Corey Schafer,
+# Tech With Tim, StatQuest, Kaggle, Real Python.
+VIDEO = {
+    1: "python virtual environment venv mac vscode tutorial", 2: "python lists dictionaries sets comprehensions tutorial",
+    3: "FHIR explained for beginners", 4: "python pathlib organize files automation tutorial",
+    5: "python argparse command line tool tutorial", 6: "pytest tutorial for beginners",
+    8: "pandas tutorial for beginners", 9: "pandas data cleaning missing values tutorial",
+    10: "python sqlite pandas read_sql tutorial", 11: "python requests API tutorial retries",
+    12: "matplotlib tutorial for beginners", 13: "seaborn data visualization tutorial",
+    15: "python modules packages type hints tutorial", 16: "exploratory data analysis dataset bias tutorial",
+    17: "streamlit tutorial for beginners", 18: "python send email smtplib tutorial",
+    19: "streamlit dashboard pandas tutorial", 20: "deploy streamlit app community cloud",
+    22: "python logging tutorial", 23: "python feedparser rss tutorial",
+    24: "LLM API python tutorial summarize text", 25: "scikit-learn logistic regression tutorial",
+    26: "python html email automation tutorial", 27: "github actions schedule cron python tutorial",
+    29: "scikit-learn pipeline columntransformer tutorial", 30: "cross validation random forest scikit-learn tutorial",
+    31: "data leakage machine learning explained", 32: "python yaml config machine learning experiments",
+    33: "scikit-learn compare models tutorial", 34: "gridsearchcv optuna hyperparameter tuning tutorial",
+    36: "sensitivity specificity roc auc explained", 37: "calibration curve confusion matrix scikit-learn",
+    38: "SHAP explained machine learning tutorial", 39: "fastapi tutorial deploy machine learning model",
+    40: "model cards machine learning explained", 41: "deploy streamlit app docker tutorial",
+    43: "pydantic tutorial python", 44: "LLM extraction clinical notes prompt engineering",
+    45: "LLM structured output json pydantic tutorial", 46: "evaluating LLM outputs evals tutorial",
+    47: "streamlit text input app tutorial", 48: "PII redaction presidio tutorial",
+    50: "python pypdf extract text chunking RAG", 51: "chroma vector database RAG python tutorial",
+    52: "RAG with citations tutorial", 53: "evaluate RAG pipeline tutorial",
+    54: "streamlit chatbot tutorial", 55: "how to write a great github readme",
+    57: "python project structure best practices", 58: "machine learning project design doc problem definition",
+    59: "n8n tutorial for beginners", 60: "data validation pandas great expectations tutorial",
+    61: "scikit-learn training evaluation pipeline tutorial", 62: "fastapi testing pytest github actions",
+    64: "ruff python linter tutorial pytest coverage", 65: "LLM guardrails safety healthcare",
+    66: "n8n webhook workflow tutorial", 67: "streamlit layout ui tutorial",
+    68: "deploy fastapi render tutorial", 69: "record demo gif mac readme",
+    71: "fastapi form data tutorial", 72: "LLM classification confidence threshold human in the loop",
+    73: "sqlalchemy sqlite tutorial python", 74: "telegram bot python tutorial notifications",
+    75: "human in the loop AI review interface streamlit", 76: "streamlit dashboard charts tutorial",
+    78: "python code refactoring cleanup tutorial", 79: "github profile readme pin repositories tutorial",
+    80: "github profile readme tutorial", 81: "record screen demo video mac tutorial",
+    82: "how to write a technical blog post about your projects", 83: "explain your data science project in an interview",
+}
+
+_URL_RE = re.compile(r"(?<![/\w.@-])((?:[a-z0-9-]+\.)+(?:org|com|io|dev|net|co|ai|int)(?:/[^\s;,)\]]*)?)")
+
+
+def link_fix(text):
+    """Turn bare domains like docs.python.org/3/tutorial into clickable https:// links."""
+    return _URL_RE.sub(lambda m: "https://" + m.group(1), text)
+
+
+def video_url(n):
+    q = VIDEO.get(n)
+    return "https://www.youtube.com/results?search_query=" + quote_plus(q) if q else ""
+
+
 def build_days():
     """Flatten WEEKS into 84 day dicts."""
     days = []
@@ -341,7 +478,7 @@ def build_days():
         for d_index, (track, title, do, out) in enumerate(week["days"]):
             n += 1
             days.append(dict(n=n, week=w_index, weekday=d_index, track=track,
-                             title=title, do=do, out=out,
+                             title=title, do=do, out=out, res=link_fix(RESOURCES.get(n, "")), video=video_url(n),
                              theme=week["theme"], project=week["project"]))
         n += 1
         days.append(dict(
@@ -349,7 +486,8 @@ def build_days():
             title=f"Week {w_index} review + push",
             do=("Write your weekly journal: what worked, what broke, what you'd do differently. "
                 "Tick off the week's days and push everything with `python tools/daylog.py`."),
-            out=week["demo"], theme=week["theme"], project=week["project"]))
+            out=week["demo"], res=REVIEW_RES.replace("week-XX", f"week-{w_index:02d}"), video="",
+            theme=week["theme"], project=week["project"]))
     return days
 
 

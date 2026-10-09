@@ -7,6 +7,7 @@ Usage (run from anywhere inside the repo):
     python tools/daylog.py --day 12             # log a specific day (catching up)
     python tools/daylog.py --no-push            # commit only, don't push
     python tools/daylog.py status               # show progress without changing anything
+    python tools/daylog.py today                # show today's lesson, tasks and resources (--day N for another day)
 
 What it updates:
     progress.json            machine-readable state
@@ -131,7 +132,7 @@ def commit_and_push(message: str, push: bool) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", nargs="?", default="log", choices=["log", "status"])
+    ap.add_argument("command", nargs="?", default="log", choices=["log", "status", "today"])
     ap.add_argument("--day", type=int, help="Day number to log (default: today's)")
     ap.add_argument("-n", "--note", help="One-line note about what you did")
     ap.add_argument("--no-push", action="store_true")
@@ -149,6 +150,16 @@ def main() -> None:
     if not 1 <= n <= TOTAL:
         sys.exit(f"Day must be between 1 and {TOTAL}.")
     d = DAYS[n - 1]
+    if args.command == "today":
+        print(f"Day {n} | {d['track']}: {d['title']}")
+        print(f"Week {d['week']}: {d['theme']}  ({d['project']})\n")
+        print(f"WARM-UP:   https://exercism.org/tracks/python or https://www.kaggle.com/learn/python\n")
+        print(f"DO:        {d['do']}\n")
+        print(f"SHIP:      {d['out']}\n")
+        print(f"RESOURCES: {d['res']}\n")
+        if d["video"]:
+            print(f"WATCH:     {d['video']}")
+        return
     if str(n) in state["done"]:
         print(f"Day {n} is already logged; updating its note.")
     note = args.note
