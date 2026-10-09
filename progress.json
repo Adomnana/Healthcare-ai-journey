@@ -3,6 +3,10 @@
     "1": {
       "date": "2026-10-08",
       "note": "Set up venv and folders, did 10 exercises"
+    },
+    "2": {
+      "date": "2026-10-09",
+      "note": "DO: Lists, dicts, sets, comprehensions. Read/write CSV and JSON. Parse a CSV of SYNTHETIC patient vitals into a list of dicts and compute averages."
     }
   }
 }

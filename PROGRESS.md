@@ -1,13 +1,13 @@
 # Progress
 
-**Progress:** `--------------------` 1% (1/84 days) | current streak: 1 day(s)
+**Progress:** `--------------------` 2% (2/84 days) | current streak: 2 day(s)
 
 
 ## Week 1: Setup + Python fast-track
 *Project 0: Vitals Logger CLI*
 
 - [x] Day 1 (PYTHON): Environment + Git workflow - Set up venv and folders, did 10 exercises
-- [ ] Day 2 (PYTHON): Data structures + files
+- [x] Day 2 (PYTHON): Data structures + files - DO: Lists, dicts, sets, comprehensions. Read/write CSV and JSON. Parse a CSV of SYNTHETIC patient vitals into a list of dicts and compute averages.
 - [ ] Day 3 (HEALTH AI): Health data 101 + privacy
 - [ ] Day 4 (AUTOMATION): Folder organiser script
 - [ ] Day 5 (BUILD): Vitals Logger CLI: core
