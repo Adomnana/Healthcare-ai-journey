@@ -1,6 +1,6 @@
 # Progress
 
-**Progress:** `--------------------` 2% (2/84 days) | current streak: 2 day(s)
+**Progress:** `#-------------------` 4% (3/84 days) | current streak: 3 day(s)
 
 
 ## Week 1: Setup + Python fast-track
@@ -8,7 +8,7 @@
 
 - [x] Day 1 (PYTHON): Environment + Git workflow - Set up venv and folders, did 10 exercises
 - [x] Day 2 (PYTHON): Data structures + files - DO: Lists, dicts, sets, comprehensions. Read/write CSV and JSON. Parse a CSV of SYNTHETIC patient vitals into a list of dicts and compute averages.
-- [ ] Day 3 (HEALTH AI): Health data 101 + privacy
+- [x] Day 3 (HEALTH AI): Health data 101 + privacy - DO: Skim what EHRs, ICD-10 and FHIR are (30 min). Read the basics of Ghana's Data Protection Act, 2012 (Act 843). Write data-rules.md: never use real patient data, de-identify, keep secrets out of Git. Generate 50 synthetic patients with Python's random module or Faker.
 - [ ] Day 4 (AUTOMATION): Folder organiser script
 - [ ] Day 5 (BUILD): Vitals Logger CLI: core
 - [ ] Day 6 (BUILD): Vitals Logger CLI: tests + README
