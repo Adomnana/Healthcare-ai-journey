@@ -29,3 +29,6 @@
 ## Day 2 - Data structures + files (2026-10-17)
 - Completed
 
+## Day 3 - Health data 101 + privacy (2026-10-17)
+- Completed
+

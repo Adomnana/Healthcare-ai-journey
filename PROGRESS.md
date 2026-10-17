@@ -8,7 +8,7 @@
 
 - [x] Day 1 (PYTHON): Environment + Git workflow - Completed
 - [x] Day 2 (PYTHON): Data structures + files - Completed
-- [x] Day 3 (HEALTH AI): Health data 101 + privacy - Wrote data-rules.md, made synthetic patients
+- [x] Day 3 (HEALTH AI): Health data 101 + privacy - Completed
 - [ ] Day 4 (AUTOMATION): Folder organiser script
 - [ ] Day 5 (BUILD): Vitals Logger CLI: core
 - [ ] Day 6 (BUILD): Vitals Logger CLI: tests + README
