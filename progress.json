@@ -15,6 +15,10 @@
     "10": {
       "date": "2026-10-17",
       "note": "python tools/daylog.py --day 3 -n \"Health data basics and privacy rules\""
+    },
+    "4": {
+      "date": "2026-10-17",
+      "note": "Completed"
     }
   }
 }

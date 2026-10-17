@@ -1,6 +1,6 @@
 # Progress
 
-**Progress:** `#-------------------` 5% (4/84 days) | current streak: 1 day(s)
+**Progress:** `#-------------------` 6% (5/84 days) | current streak: 1 day(s)
 
 
 ## Week 1: Setup + Python fast-track
@@ -9,7 +9,7 @@
 - [x] Day 1 (PYTHON): Environment + Git workflow - Completed
 - [x] Day 2 (PYTHON): Data structures + files - Completed
 - [x] Day 3 (HEALTH AI): Health data 101 + privacy - Completed
-- [ ] Day 4 (AUTOMATION): Folder organiser script
+- [x] Day 4 (AUTOMATION): Folder organiser script - Completed
 - [ ] Day 5 (BUILD): Vitals Logger CLI: core
 - [ ] Day 6 (BUILD): Vitals Logger CLI: tests + README
 - [ ] Day 7 (REVIEW): Week 1 review + push

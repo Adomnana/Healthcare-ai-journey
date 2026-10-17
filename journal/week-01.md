@@ -32,3 +32,6 @@
 ## Day 3 - Health data 101 + privacy (2026-10-17)
 - Completed
 
+## Day 4 - Folder organiser script (2026-10-17)
+- Completed
+
