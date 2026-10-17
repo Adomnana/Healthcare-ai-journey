@@ -11,6 +11,10 @@
     "3": {
       "date": "2026-10-10",
       "note": "DO: Skim what EHRs, ICD-10 and FHIR are (30 min). Read the basics of Ghana's Data Protection Act, 2012 (Act 843). Write data-rules.md: never use real patient data, de-identify, keep secrets out of Git. Generate 50 synthetic patients with Python's random module or Faker."
+    },
+    "10": {
+      "date": "2026-10-17",
+      "note": "python tools/daylog.py --day 3 -n \"Health data basics and privacy rules\""
     }
   }
 }

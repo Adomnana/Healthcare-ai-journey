@@ -1,6 +1,6 @@
 # Progress
 
-**Progress:** `#-------------------` 4% (3/84 days) | current streak: 3 day(s)
+**Progress:** `#-------------------` 5% (4/84 days) | current streak: 1 day(s)
 
 
 ## Week 1: Setup + Python fast-track
@@ -19,7 +19,7 @@
 
 - [ ] Day 8 (PYTHON): pandas I
 - [ ] Day 9 (HEALTH AI): Cleaning clinical data
-- [ ] Day 10 (PYTHON): pandas II + SQL tie-in
+- [x] Day 10 (PYTHON): pandas II + SQL tie-in - python tools/daylog.py --day 3 -n "Health data basics and privacy rules"
 - [ ] Day 11 (AUTOMATION): APIs with requests
 - [ ] Day 12 (BUILD): Explorer notebook
 - [ ] Day 13 (BUILD): Charts + findings
