@@ -7,7 +7,7 @@
 *Project 0: Vitals Logger CLI*
 
 - [x] Day 1 (PYTHON): Environment + Git workflow - Set up venv, folders and Git
-- [x] Day 2 (PYTHON): Data structures + files - DO: Lists, dicts, sets, comprehensions. Read/write CSV and JSON. Parse a CSV of SYNTHETIC patient vitals into a list of dicts and compute averages.
+- [x] Day 2 (PYTHON): Data structures + files - Parsed vitals CSV into dicts
 - [x] Day 3 (HEALTH AI): Health data 101 + privacy - DO: Skim what EHRs, ICD-10 and FHIR are (30 min). Read the basics of Ghana's Data Protection Act, 2012 (Act 843). Write data-rules.md: never use real patient data, de-identify, keep secrets out of Git. Generate 50 synthetic patients with Python's random module or Faker.
 - [ ] Day 4 (AUTOMATION): Folder organiser script
 - [ ] Day 5 (BUILD): Vitals Logger CLI: core

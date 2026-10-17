@@ -17,3 +17,6 @@
 ## Day 1 - Environment + Git workflow (2026-10-17)
 - Set up venv, folders and Git
 
+## Day 2 - Data structures + files (2026-10-17)
+- Parsed vitals CSV into dicts
+
