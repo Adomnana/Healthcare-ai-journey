@@ -14,3 +14,6 @@
 ## Day 3 - Health data 101 + privacy (2026-10-10)
 - DO: Skim what EHRs, ICD-10 and FHIR are (30 min). Read the basics of Ghana's Data Protection Act, 2012 (Act 843). Write data-rules.md: never use real patient data, de-identify, keep secrets out of Git. Generate 50 synthetic patients with Python's random module or Faker.
 
+## Day 1 - Environment + Git workflow (2026-10-17)
+- Set up venv, folders and Git
+
