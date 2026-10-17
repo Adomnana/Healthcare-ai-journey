@@ -20,3 +20,6 @@
 ## Day 2 - Data structures + files (2026-10-17)
 - Parsed vitals CSV into dicts
 
+## Day 3 - Health data 101 + privacy (2026-10-17)
+- Wrote data-rules.md, made synthetic patients
+
