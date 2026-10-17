@@ -7,7 +7,7 @@
 *Project 0: Vitals Logger CLI*
 
 - [x] Day 1 (PYTHON): Environment + Git workflow - Completed
-- [x] Day 2 (PYTHON): Data structures + files - Parsed vitals CSV into dicts
+- [x] Day 2 (PYTHON): Data structures + files - Completed
 - [x] Day 3 (HEALTH AI): Health data 101 + privacy - Wrote data-rules.md, made synthetic patients
 - [ ] Day 4 (AUTOMATION): Folder organiser script
 - [ ] Day 5 (BUILD): Vitals Logger CLI: core
