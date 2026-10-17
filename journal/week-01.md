@@ -23,3 +23,6 @@
 ## Day 3 - Health data 101 + privacy (2026-10-17)
 - Wrote data-rules.md, made synthetic patients
 
+## Day 1 - Environment + Git workflow (2026-10-17)
+- Completed
+
